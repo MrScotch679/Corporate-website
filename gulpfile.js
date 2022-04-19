@@ -19,6 +19,10 @@ const pathes = {
         src: './src/*.html',
         dest: './dist/'
     },
+    fonts: {
+        src: './src/fonts/*.+(woff|ttf)',
+        dest: './dist/fonts'
+    },
     images: {
         src: './src/img/**',
         dest: './dist/img/'
@@ -112,6 +116,11 @@ gulp.task('js-compiler', () => {
     .pipe(gulp.dest(pathes.js.dest));
 });
 
+gulp.task('fonts', () => {
+    return gulp.src(pathes.fonts.src)
+    .pipe(gulp.dest(pathes.fonts.dest));
+});
+
 //watch
 gulp.task('watch', () => {
     gulp.watch(pathes.styles.src, gulp.parallel('sass-compiler'));
@@ -121,7 +130,7 @@ gulp.task('watch', () => {
 
 gulp.task('default', gulp.series(
     clean,
-    gulp.parallel('watch', 'icons-compiler', 'images-compiler', 'sass-compiler', 'html-compiler', 'js-compiler', 'browser-sync') 
+    gulp.parallel('watch', 'icons-compiler', 'images-compiler', 'sass-compiler', 'html-compiler', 'js-compiler', 'browser-sync', 'fonts') 
 ));
 
 exports.clean = clean;
