@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Vollkorn";
+  font-display: swap;
+  src: url("../fonts/Vollkorn-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+* {
+  font-family: "Vollkorn";
+}
+
+.hola {
+  font-size: 50px;
+  font-weight: 900;
+}
