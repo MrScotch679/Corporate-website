@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Vollkorn-Bold";
+  font-display: swap;
+  src: local("Vollkorn-Bold"), url("../../fonts/Vollkorn-Bold.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+* {
+  font-family: "Vollkorn-Bold";
+}
+
+.hola {
+  font-size: 50px;
+}

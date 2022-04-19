@@ -12,7 +12,7 @@ const browserSync = require('browser-sync').create();
 const pathes = {
     root: 'dist/',
     styles: {
-        src: './src/scss/**/*.scss',
+        src: './src/sass/**/*.scss',
         dest: './dist/css'
     },
     layout: {
@@ -37,7 +37,7 @@ const pathes = {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "src"
+            baseDir: "dist"
         }
     });
 });
