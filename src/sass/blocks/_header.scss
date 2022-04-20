@@ -1,0 +1,24 @@
+.header {
+    min-height: 824px;
+    background: url(../../img/bg/head-bg.jpg) center (center / cover) no-repeat;
+    padding: 44px 40px 264px 45px;
+    &__text {
+        margin-top: 198px;
+        :nth-child(3) {
+            margin-top: 70px;
+        }
+        h1 {
+            font-weight: 700;
+            font-size: 90px;
+            line-height: 60px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 60px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
