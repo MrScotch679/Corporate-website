@@ -1,10 +1,8 @@
 @import '../libs/fonts';
+@import '../blocks/header';
+@import '../libs/bootstrap-reboot.min';
+@import '../blocks/block-menu';
 
 * {
     font-family: "Vollkorn";
-}
-
-.hola {
-    font-size: 50px;
-    font-weight: 900;
 }

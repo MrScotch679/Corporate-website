@@ -1,0 +1,90 @@
+.block-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 60px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: red;
+            box-shadow: 0px 0px 90px 5px #ffff;
+            background: rgba($color: #ffff, $alpha: 0.3);
+        }
+        img {
+            width: 60px;
+        }
+    }
+    &__menu {
+        position: relative;
+        width: 113px;
+        height: 34px;
+        background: rgba($color: #ffff, $alpha: 0.23);
+        border-radius: 100px;
+        &:hover {
+            cursor: pointer;
+            background: rgba($color: #ffff, $alpha: 0.4);
+        }
+        &_active {
+            display: flex;
+            flex-wrap: wrap;
+            top: 49px;
+            width: 616px;
+            height: 70px;
+            position: absolute;
+            padding: 0 50px 0 50px;
+            ul {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                list-style: none;
+                padding: 0;
+                width: 100%;
+                li {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 17px;
+                    line-height: 70px;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+        .menu__items {
+            display: flex;
+            justify-content: center;
+            .hamsburger {
+                margin: 12px 7px 0 0;
+                width: 15px;
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #FFFFFF;
+                    margin-bottom: 2px;
+                }
+            }
+            .menu-text {
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 34px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    &__social {
+        .inst {
+            margin-right: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .vk {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
