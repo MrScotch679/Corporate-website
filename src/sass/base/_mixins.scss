@@ -1,0 +1,10 @@
+@mixin title {
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+@mixin menu {
+  background: rgba($color: #FFFFFF, $alpha: 0.23);
+  border-radius: 100px;
+}
