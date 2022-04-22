@@ -8,3 +8,21 @@
   background: rgba($color: #FFFFFF, $alpha: 0.23);
   border-radius: 100px;
 }
+
+@mixin descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #011313;
+}
+
+@mixin arrow {
+  position: absolute;
+  top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 93px;
+  border-radius: 100%;
+}
