@@ -28,30 +28,29 @@
     cursor: pointer;
     background: rgba($color: #ffff, $alpha: 0.4);
   }
-  &__list { 
+  &__wrapper { 
     position: absolute;
     left: 50%;
     top: 60px;
     transform: translateX(calc(-50% + 56px));
-    display: flex;
     width: 616px;
     height: 70px;
     padding: 0 50px 0 50px;
     @include menu;
-    ul {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
-      padding: 0;
-      width: 100%;
-      li {
-        text-align: center;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 70px;
-        color: $mc;
-        margin: 0;
-      }
-    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+  &__item {
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 70px;
+    color: $mc;
+    margin: 0;
   }
 }

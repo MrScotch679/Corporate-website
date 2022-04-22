@@ -2,17 +2,67 @@
 @import 'base/variable';
 @import './libs/bootstrap-reboot.min';
 @import './libs/fonts';
-@import './blocks/header';
-@import './blocks/navigation';
 @import './blocks/menu';
 
 * {
     font-family: "Vollkorn";
 }
 
+.header {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  &__wrapper {
+    width: 100%;
+    padding: 0 40px 0 45px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  &__logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 60px;
+    text-decoration: none;
+    color: $mc;
+    &:hover {
+      color: red;
+      box-shadow: 0px 0px 90px 5px #ffff;
+      background: rgba($color: #ffff, $alpha: 0.3);
+    }
+    img {
+      width: 60px;
+    }
+  }
+}
+
 .social {
   display: flex;
   :nth-child(2) {
     margin-left: 20px;
+  }
+}
+
+.promo {
+  min-height: 824px;
+  background: url(../../img/bg/head-bg.jpg) center (center / cover) no-repeat;
+  padding: 275px 40px 0 45px;
+  :nth-child(3) {
+    margin-top: 70px;
+  } 
+  &__title {
+    font-size: 90px;
+    color: $mc;
+    @include title;
+  }
+  &__subtitle {
+      @include title;
+      color: $mc;
+      font-size: 60px;
   }
 }
