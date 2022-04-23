@@ -16,7 +16,7 @@
   color: #011313;
 }
 
-@mixin arrow {
+@mixin carousel__arrow {
   position: absolute;
   top: -100px;
   display: flex;
@@ -25,4 +25,20 @@
   width: 93px;
   height: 93px;
   border-radius: 100%;
+  &:hover {
+    background-color: rgba($color: #FFFFFF, $alpha: 0.34);
+  }
+}
+
+@mixin img__arrow {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 93px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &:hover {
+    background: rgba($color: #FFFFFF, $alpha: 0.4);
+  }
 }

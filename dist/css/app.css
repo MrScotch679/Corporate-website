@@ -625,8 +625,8 @@ progress {
   position: relative;
   margin-top: 45px;
 }
-.carousel .arrow__left {
-  left: 0;
+.carousel__arrow_left {
+  left: 10px;
   position: absolute;
   top: -100px;
   display: flex;
@@ -636,12 +636,11 @@ progress {
   height: 93px;
   border-radius: 100%;
 }
-.carousel .arrow__left .pre {
-  width: 22px;
-  height: 10px;
+.carousel__arrow_left:hover {
+  background-color: rgba(255, 255, 255, 0.34);
 }
-.carousel .arrow__right {
-  right: 0;
+.carousel__arrow_right {
+  right: 10px;
   position: absolute;
   top: -100px;
   display: flex;
@@ -650,6 +649,9 @@ progress {
   width: 93px;
   height: 93px;
   border-radius: 100%;
+}
+.carousel__arrow_right:hover {
+  background-color: rgba(255, 255, 255, 0.34);
 }
 .carousel__items {
   display: flex;
@@ -661,9 +663,42 @@ progress {
   width: 363px;
 }
 .carousel__item .img {
+  position: relative;
+}
+.carousel__item .img__arrow_left {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 93px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  padding-left: 3px;
+}
+.carousel__item .img__arrow_left:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.carousel__item .img_car {
   border-radius: 15px 15px 0px 0px;
   width: 363px;
   height: 340px;
+}
+.carousel__item .img__arrow_right {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 93px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  justify-content: flex-end;
+  padding-right: 3px;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+}
+.carousel__item .img__arrow_right:hover {
+  background: rgba(255, 255, 255, 0.4);
 }
 .carousel__item .description {
   padding: 21px 30px 10px 16px;

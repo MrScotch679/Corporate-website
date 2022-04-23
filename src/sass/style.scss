@@ -81,17 +81,13 @@
 .carousel {
   position: relative;
   margin-top: 45px;
-  .arrow__left {
-    left: 0;
-    @include arrow;
-    .pre {
-      width: 22px;
-      height: 10px;
-    }
+  &__arrow_left {
+    left: 10px;
+    @include carousel__arrow;
   }
-  .arrow__right {
-    right: 0;
-    @include arrow;
+  &__arrow_right {
+    right: 10px;
+    @include carousel__arrow;
   }
   &__items {
     display: flex;
@@ -102,9 +98,24 @@
     height: 573px;
     width: 363px;
     .img {
-      border-radius: 15px 15px 0px 0px;
-      width: 363px;
-      height: 340px;
+      position: relative;
+      &__arrow_left {
+        @include img__arrow;
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        padding-left: 3px;
+      }
+      &_car {
+        border-radius: 15px 15px 0px 0px;
+        width: 363px;
+        height: 340px;
+      }
+      &__arrow_right {
+        @include img__arrow;
+        right: 0;
+        justify-content: flex-end;
+        padding-right: 3px;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      }
     }
     .description {
       padding: 21px 30px 10px 16px;
