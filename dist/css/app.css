@@ -545,6 +545,13 @@ progress {
   font-family: "Vollkorn";
 }
 
+.container {
+  width: 1440px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
 .header {
   position: absolute;
   top: 40px;
@@ -621,70 +628,50 @@ progress {
   font-size: 40px;
 }
 
+.arrow-dark {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 93px;
+  border-radius: 100%;
+}
+.arrow-dark:hover {
+  background-color: rgba(255, 255, 255, 0.34);
+}
+.arrow-dark_left {
+  left: 5px;
+}
+.arrow-dark_right {
+  right: 0px;
+}
+.arrow-dark_right .next_dark {
+  transform: scale(-1);
+}
+
 .carousel {
+  overflow: hidden;
   position: relative;
   margin-top: 45px;
-}
-.carousel__arrow_left {
-  left: 10px;
-  position: absolute;
-  top: -100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 93px;
-  height: 93px;
-  border-radius: 100%;
-}
-.carousel__arrow_left:hover {
-  background-color: rgba(255, 255, 255, 0.34);
-}
-.carousel__arrow_right {
-  right: 10px;
-  position: absolute;
-  top: -100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 93px;
-  height: 93px;
-  border-radius: 100%;
-}
-.carousel__arrow_right:hover {
-  background-color: rgba(255, 255, 255, 0.34);
-}
-.carousel__items {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 40px 0 40px;
+  padding-left: 40px;
 }
 .carousel__item {
   height: 573px;
   width: 363px;
+  margin-right: 20px;
 }
-.carousel__item .img {
+.carousel__item .carousel-preview {
   position: relative;
 }
-.carousel__item .img__arrow_left {
-  display: flex;
-  align-items: center;
-  width: 46px;
-  height: 93px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 0 100% 100% 0/0 50% 50% 0;
-  padding-left: 3px;
-}
-.carousel__item .img__arrow_left:hover {
-  background: rgba(255, 255, 255, 0.4);
-}
-.carousel__item .img_car {
+.carousel__item .carousel-preview__img {
   border-radius: 15px 15px 0px 0px;
   width: 363px;
   height: 340px;
 }
-.carousel__item .img__arrow_right {
+.carousel__item .carousel-preview .arrow-white {
   display: flex;
   align-items: center;
   width: 46px;
@@ -692,55 +679,61 @@ progress {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.carousel__item .carousel-preview .arrow-white:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.carousel__item .carousel-preview .arrow-white_left {
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  padding-left: 3px;
+}
+.carousel__item .carousel-preview .arrow-white_right {
   right: 0;
   justify-content: flex-end;
   padding-right: 3px;
   border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
-.carousel__item .img__arrow_right:hover {
-  background: rgba(255, 255, 255, 0.4);
+.carousel__item .carousel-preview .arrow-white_right .next_white {
+  transform: scale(-1);
 }
-.carousel__item .description {
+.carousel__item .carousel-info {
   padding: 21px 30px 10px 16px;
   background: #FFFFFF;
   border-radius: 0px 0px 15px 15px;
 }
-.carousel__item .description__title {
+.carousel__item .carousel-info__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 28px;
   color: #011313;
 }
-.carousel__item .description__engine {
+.carousel__item .carousel-info__engine {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
 }
-.carousel__item .description__year {
+.carousel__item .carousel-info__year {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.carousel__item .description__items {
+.carousel__item .carousel-info__items {
   display: flex;
   margin-top: 22px;
   justify-content: space-between;
 }
-.carousel__item .description__item {
+.carousel__item .carousel-info__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.carousel__item .description__item .img {
+.carousel__item .carousel-info__img {
   width: 23px;
   height: 23px;
 }
-.carousel__item .description__item .text {
+.carousel__item .carousel-info__text {
   color: #557180;
-}
-.carousel .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  color: #011313;
 }
