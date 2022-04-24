@@ -162,15 +162,13 @@
       line-height: 28px;
       color: #011313;
     }
-    &__engine {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 24px;
-    }
-    &__year {
+    &__about-car {
       display: flex;
       justify-content: space-between;
       margin-top: 10px;
+      &_mt {
+        margin-top: 24px;
+      }
     }
     &__items {
       display: flex;
