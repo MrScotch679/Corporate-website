@@ -546,7 +546,7 @@ progress {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -663,15 +663,15 @@ progress {
   width: 363px;
   margin-right: 20px;
 }
-.carousel__item .carousel-preview {
+.carousel-preview {
   position: relative;
 }
-.carousel__item .carousel-preview__img {
+.carousel-preview__img {
   border-radius: 15px 15px 0px 0px;
   width: 363px;
   height: 340px;
 }
-.carousel__item .carousel-preview .arrow-white {
+.carousel-preview__arrow {
   display: flex;
   align-items: center;
   width: 46px;
@@ -680,58 +680,58 @@ progress {
   top: 50%;
   transform: translateY(-50%);
 }
-.carousel__item .carousel-preview .arrow-white:hover {
+.carousel-preview__arrow:hover {
   background: rgba(255, 255, 255, 0.4);
 }
-.carousel__item .carousel-preview .arrow-white_left {
+.carousel-preview__arrow_left {
   border-radius: 0 100% 100% 0/0 50% 50% 0;
   padding-left: 3px;
 }
-.carousel__item .carousel-preview .arrow-white_right {
+.carousel-preview__arrow_right {
   right: 0;
   justify-content: flex-end;
   padding-right: 3px;
   border-radius: 100% 0 0 100%/50% 0 0 50%;
 }
-.carousel__item .carousel-preview .arrow-white_right .next_white {
+.carousel-preview__arrow_right .next_white {
   transform: scale(-1);
 }
-.carousel__item .carousel-info {
+.carousel-info {
   padding: 21px 30px 10px 16px;
   background: #FFFFFF;
   border-radius: 0px 0px 15px 15px;
 }
-.carousel__item .carousel-info__title {
+.carousel-info__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 28px;
   color: #011313;
 }
-.carousel__item .carousel-info__engine {
+.carousel-info__engine {
   display: flex;
   justify-content: space-between;
   margin-top: 24px;
 }
-.carousel__item .carousel-info__year {
+.carousel-info__year {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
 }
-.carousel__item .carousel-info__items {
+.carousel-info__items {
   display: flex;
   margin-top: 22px;
   justify-content: space-between;
 }
-.carousel__item .carousel-info__item {
+.carousel-info__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.carousel__item .carousel-info__img {
+.carousel-info__img {
   width: 23px;
   height: 23px;
 }
-.carousel__item .carousel-info__text {
+.carousel-info__text {
   color: #557180;
   font-weight: 400;
   font-size: 14px;
