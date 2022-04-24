@@ -8,6 +8,13 @@
     font-family: "Vollkorn";
 }
 
+.container {
+  max-width: 1440px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
 .header {
   position: absolute;
   top: 40px;
@@ -64,5 +71,126 @@
       @include title;
       color: $mc;
       font-size: 60px;
+  }
+}
+
+.catalog {
+  min-height: 838px;
+  background: #E2E9EC;
+  padding: 67px 0 95px 0;
+  &__title {
+    @include title;
+    color: #355463;
+    font-size: 40px;
+  }
+}
+
+.arrow-dark {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 93px;
+  border-radius: 100%;
+  &:hover {
+    background-color: rgba($color: #FFFFFF, $alpha: 0.34);
+  }
+  &_left {
+    left: 5px;
+  }
+  &_right {
+    right: 0px;
+    .next_dark {
+      transform: scale(-1);
+    }
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  margin-top: 45px;
+  display: flex;
+  padding-left: 40px;
+  &__item {
+    height: 573px;
+    width: 363px;
+    margin-right: 20px;
+  }
+  &-preview {
+    position: relative;
+    &__img {
+      border-radius: 15px 15px 0px 0px;
+      width: 363px;
+      height: 340px;
+    }
+    &__arrow {
+      display: flex;
+      align-items: center;
+      width: 46px;
+      height: 93px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        background: rgba($color: #FFFFFF, $alpha: 0.4);
+      }
+      &_left {
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        padding-left: 3px;
+      }
+      &_right {
+        right: 0;
+        justify-content: flex-end;
+        padding-right: 3px;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        .next_white {
+          transform: scale(-1);
+        }
+      }
+    } 
+  }
+  &-info {
+    padding: 21px 30px 10px 16px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+    &__title {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 28px;
+      color: #011313;
+    }
+    &__engine {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 24px;
+    }
+    &__year {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    &__items {
+      display: flex;
+      margin-top: 22px;
+      justify-content: space-between;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      width: 23px;
+      height: 23px;
+    }
+    &__text {
+      color: #557180;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
