@@ -201,6 +201,42 @@
   }
 }
 
+.journey {
+  min-height: 743px;
+  background: #E2E9EC;
+  padding: 70px 0 80px 0;
+  &__title {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 212px;
+  }
+  &__button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 335px;
+    width: 168px;
+    height: 42px;
+    img {
+      margin-left: 10px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &__item {
+    margin: 0 25px;
+    
+  }
+  &__preview {
+    width: 687px;
+    height: 593px;
+    border-radius: 25px;
+
 .about-us {
   background: url(../img/bg/bg-car.jpg) center (center / cover) no-repeat;
   min-height: 735px;
