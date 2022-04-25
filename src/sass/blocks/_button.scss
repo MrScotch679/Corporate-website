@@ -1,0 +1,17 @@
+.button {
+  width: 114px;
+  height: 34px;
+  background: #FFFFFF;
+  border-radius: 100px;
+  border: none;
+  &__link {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000503;
+    &:hover {
+      color: #000503;
+    }
+  }
+}
