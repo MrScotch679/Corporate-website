@@ -3,6 +3,7 @@
 @import './libs/bootstrap-reboot.min';
 @import './libs/fonts';
 @import './blocks/menu';
+@import './blocks/button';
 
 * {
     font-family: "Vollkorn";
@@ -61,17 +62,24 @@
   padding: 275px 40px 0 45px;
   :nth-child(3) {
     margin-top: 70px;
-  } 
+  }
   &__title {
-    font-size: 90px;
-    color: $mc;
-    @include title;
+    text-align: center;
   }
   &__subtitle {
-      @include title;
-      color: $mc;
-      font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: $mc;
+    font-size: 60px;
   }
+}
+
+.title {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 60px;
+  color: $mc;
 }
 
 .catalog {
@@ -79,7 +87,9 @@
   background: #E2E9EC;
   padding: 67px 0 95px 0;
   &__title {
-    @include title;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
     color: #355463;
     font-size: 40px;
   }
@@ -161,13 +171,9 @@
       font-size: 28px;
       line-height: 28px;
       color: #011313;
+      margin-bottom: 24px;
     }
-    &__engine {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 24px;
-    }
-    &__year {
+    &__about-car {
       display: flex;
       justify-content: space-between;
       margin-top: 10px;
@@ -192,5 +198,26 @@
       font-size: 14px;
       line-height: 14px;
     }
+  }
+}
+
+.about-us {
+  background: url(../img/bg/bg-car.jpg) center (center / cover) no-repeat;
+  min-height: 735px;
+  &__wrapper {
+    padding: 121px 712px 135px 70px;
+  }
+  &__title {
+    line-height: 90px;
+  }
+  &__text {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: $mc;
+  }
+  &__button {
+    margin-top: 48px;
   }
 }
