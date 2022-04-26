@@ -5,6 +5,7 @@
 @import './blocks/menu';
 @import './blocks/button';
 @import './blocks/menu';
+@import './blocks/footer';
 
 * {
     font-family: "Vollkorn";
@@ -33,27 +34,29 @@
   align-items: center;
   position: relative;
   width: 100%;
-  &__logo {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 60px;
-    text-decoration: none;
-    color: $mc;
-    &:hover {
-      color: red;
-      box-shadow: 0px 0px 90px 5px #ffff;
-      background: rgba($color: #ffff, $alpha: 0.3);
-    }
-    img {
-      width: 60px;
-    }
+  
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 60px;
+  text-decoration: none;
+  color: $mc;
+  &:hover {
+    color: red;
+    box-shadow: 0px 0px 90px 5px #ffff;
+    background: rgba($color: #ffff, $alpha: 0.3);
+  }
+  &__car-top {
+    width: 60px;
   }
 }
 
 .social {
   display: flex;
-  :nth-child(2) {
-    margin-left: 20px;
+  &_item {
+    margin: 0 10px;
   }
 }
 
@@ -290,5 +293,22 @@
     min-height: 295px;
     margin: 0 auto;
     margin-top: 48px;
+    :nth-child(2) {
+      margin: 12px 0 12px 0;
+    }
+  }
+  &__input-area {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 35px;
+    border-color: #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    opacity: 0.5;
+    &:focus {
+      opacity: 1;
+      outline: none;
+    }
   }
 }

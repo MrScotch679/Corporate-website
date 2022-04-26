@@ -1,4 +1,5 @@
 .menu {
+  position: relative;
   &__items {
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@
     position: absolute;
     left: 50%;
     top: 60px;
-    transform: translateX(calc(-50% + 56px));
+    transform: translateX(-50%);
     width: 616px;
     height: 70px;
     padding: 0 50px 0 50px;
