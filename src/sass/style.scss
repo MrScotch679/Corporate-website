@@ -247,9 +247,6 @@
     top: 335px;
     width: 168px;
     height: 42px;
-    img {
-      margin-left: 10px;
-    }
   }
   &__items {
     display: flex;
@@ -266,7 +263,7 @@
   }
 }
 
-.input-form {
+.contact-us {
   min-height: 686px;
   background-color: #FFFFFF;
   padding: 100px 0 100px 0;
@@ -309,6 +306,23 @@
     &:focus {
       opacity: 1;
       outline: none;
+    }
+  }
+  &__button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 28px;
+    width: 200px;
+    height: 38px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 140px;
+      height: 1px;
+      background-color: #000000;
     }
   }
 }

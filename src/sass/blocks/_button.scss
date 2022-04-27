@@ -1,4 +1,7 @@
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 114px;
   height: 34px;
   background: #FFFFFF;
@@ -13,5 +16,8 @@
     &:hover {
       color: #000503;
     }
+  }
+  &__arrow {
+    margin-left: 10px;
   }
 }
