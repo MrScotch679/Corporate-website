@@ -1,0 +1,459 @@
+@media (min-width:442px) and (max-width: 480px) {
+  div.container {
+    max-width: 414px;
+  }
+
+  .header {
+    width: 100%;
+    &__wrapper {
+      width: 100%;
+    }
+  }
+  
+  .logo {
+    order: 2;
+  }
+
+  .social {
+    order: 3;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .menu {
+    margin: 0;
+    position: unset;
+    &__wrapper {
+      display: flex; 
+      position: fixed;
+      left: 0;
+      top: 0px;
+      transform: translateX(0);
+      padding: 0;
+      background: none;
+      z-index: 5;
+      display: none;
+    }
+    &__list {
+      flex-direction: column;
+      padding-left: 25px;
+      width: 100%;
+      height: 600px;
+      background: black;
+    }
+    &__item {
+      font-size: 25px;
+      color: $main-color;
+    }
+  }
+
+  .promo {
+    min-height: 736px;
+    padding: 220px 29px 0 29px;
+    .title {
+      font-size: 50px;
+      line-height: 53px;
+    }
+    .heading-2 {
+      font-size: 40px;
+      line-height: 53px;
+      margin-bottom: 10px;
+    }
+    .paragraph {
+      &_left {
+        padding-right: 0px;
+      }
+    } 
+  }
+
+  //index.html//
+  .catalog {
+    min-height: 654px;
+    padding: 35px 0 55px 0;
+  }
+
+  .arrow-dark {
+    display: none;
+  }
+
+  .carousel {
+    margin-top: 21px;
+    padding: 0 5px;
+    &-item {
+      margin-right: 15px;
+    }
+    &-preview {
+      &__img {
+        width: 310px;
+      }
+      &__arrow {
+        display: none;
+      }
+    }
+  }
+
+  .about-us {
+    background: url(../img/bg/bg-car.jpg) center (center / cover) no-repeat;
+    min-height: 735px;
+    &__wrapper {
+      padding: 65px 29px 85px 20px;
+    }
+    .title {
+      font-size: 50px;
+      line-height: 53px;
+    }
+    .paragraph {
+      margin-top: 12px;
+      font-size: 17px;
+      line-height: 26px;
+    }
+    .button {
+      margin-top: 20px;
+    }
+  }
+
+  .journey {
+    min-height: 450px;
+    padding: 55px 0 55px 0;
+    .title {
+      font-size: 45px;
+      line-height: 50px;
+      top: 110px;
+    }
+    .button {
+      top: 220px;
+      width: 168px;
+      height: 42px;
+    }
+    &__item {
+      margin: 0 10px;
+    }
+    &__preview {
+      width: 310px;
+      height: 340px;
+      border-radius: 25px;
+    }
+  }
+
+  .contact-us {
+    min-height: 576px;
+    padding: 55px 0 55px 0;
+    .title {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    &__wrapper {
+      max-width: 310px;
+      min-height: 300px;
+    }
+  }
+
+  .footer {
+    min-height: 390px;
+    background: #355463;
+    padding: 40px 31px 60px 31px;
+    .invisible {
+      display: none;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__wrapper {
+      position: relative;
+      justify-content: center;
+      margin-top: 74px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        width: 240px;
+        height: 1px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+      }
+    }
+  }
+
+  //catalog.html//
+  .full-catalog {
+    min-height: 2029px;
+    padding: 50px 5px 100px 5px;
+    .carousel {
+      flex-direction: column;
+      &-item {
+        margin-right: 0;
+      }
+      &-preview {
+        &__img {
+          width: 100%;
+        }
+      }
+    }
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .pagination {
+      .invisible {
+        display: none;
+      }
+    }
+    .arrow-pre {
+      display: none;
+    }
+    .arrow-next {
+      display: none;
+    }
+  }
+
+  //about-us.html//
+  .team {
+    min-height: 835px;
+    padding: 36px 0 55px 0;
+    background: #E2E9EC;
+    .title {
+      font-size: 50px;
+      line-height: 53px;
+    }
+    &__items {
+      overflow: hidden;
+    }
+    .paragraph {
+      padding: 0 10px 0 10px;
+    }
+  }
+
+  //service-list.html//
+  .service-list {
+    min-height: 1624px;
+    background: #E2E9EC;
+    padding: 30px 5px 60px 5px;
+    .pagination {
+      display: flex;
+      margin-top: 10px;
+      .invisible {
+        display: none;
+      }
+    }
+    .arrow-pre {
+      display: none;
+    }
+    .arrow-next {
+      display: none;
+    }
+    &__items {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__item {
+      position: relative;
+      margin-bottom: 20px;
+      .button {
+        top: 210px;
+        left: 90px;
+      }
+      .title {
+        position: absolute;
+        top: 90px;
+        left: 8px;
+        font-size: 45px;
+        line-height: 50px;
+      }
+    }
+    &__preview {
+      width: 310px;
+      height: 340px;
+    }
+  }
+
+  //questions.html//
+  .questions {
+    min-height: 1411px;
+    padding: 50px 30px 39px 30px;
+    &__item {
+      .heading-2 {
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 39px;
+      }
+      .paragraph {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  //contacts.html//
+  .contact {
+    min-height: 824px;
+    background: #355463;
+    padding: 219px 30px 100px 24px;
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  .contacts {
+    .title {
+      font-size: 50px;
+      line-height: 53px;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+    .paragraph {
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+  }
+  
+  .feedback {
+    .title {
+      display: none;
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 48px;
+      max-width: 670px;
+      min-height: 295px;
+      margin: 0 auto;
+      margin-top: 48px;
+      :nth-child(2) {
+        margin: 12px 0 12px 0;
+      }
+    }
+    &__input-area {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 35px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: #355463;
+      color: #ffff;
+      &::placeholder {
+        color: #E2E9EC;
+      }
+      &:focus {
+        opacity: 1;
+        outline: none;
+      }
+    }
+    .button {
+      position: relative;
+      margin-top: 50px;
+      font-size: 28px;
+      width: 172px;
+      height: 38px;
+      padding: 0;
+      background: none;
+      color: #ffff;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 140px;
+        height: 1px;
+        background-color: #ffff;
+      }
+    }
+  }
+
+  //galery-promo.html//
+  .galery-promo {
+    min-height: 600px;
+    padding: 271px 0 286px 0;
+    .title {
+      text-align: center;
+      font-size: 50px;
+    }
+    .button {
+      margin-top: 30px;
+    }
+  }
+  
+  .collapse {
+    min-height: 90px;
+    background: #355463;
+    display: flex;
+    align-items: center;
+    &__wrapper {
+      flex-direction: column;
+    }
+    .paragraph {
+      justify-content: flex-start;
+      &:hover {
+        background: #557180;
+        cursor: pointer;
+      }
+      &:first-child {
+        width: 300px;
+      }
+    }
+  }
+  
+  .info-about {
+    padding: 50px 0 65px 0;
+    .title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 28px;
+      line-height: 30px;
+      color: #011313;
+    }
+    .info-1 {
+      display: none;
+      flex-direction: column;
+      padding: 0;
+      &__items {
+        min-height: 566px;
+        background: #E2E9EC;
+        border-radius: 0;
+        padding: 0;
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .info-2 {
+      display: none;
+      flex-direction: column;
+      padding: 0 10px;
+    }
+    .info-3 {
+      display: flex;
+      flex-direction: column;
+      padding: 0 10px;
+      &__items {
+        min-height: 566px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__item {
+        max-width: 450px;
+        max-height: 451px;
+      }
+      &__photo {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  //error-promo.html//
+  .error-promo {
+    min-height: 736px;
+    padding: 253px 0 100px 0;
+  }
+}

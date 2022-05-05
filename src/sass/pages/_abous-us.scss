@@ -1,0 +1,21 @@
+.team {
+  min-height: 835px;
+  padding: 100px 0 125px 0;
+  background: #E2E9EC;
+  .title {
+    text-align: center;
+    color: #355463;
+    margin-bottom: 27px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .paragraph {
+    margin-top: 21px;
+    text-align: center;
+    color: #011313;
+    padding: 0 172px 0 171px;
+  }
+}

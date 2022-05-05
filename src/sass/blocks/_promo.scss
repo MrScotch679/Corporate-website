@@ -1,0 +1,19 @@
+.promo {
+  min-height: 824px;
+  background: url(../../img/bg/head-bg.jpg) center (center / cover) no-repeat;
+  padding: 275px 40px 0 45px;
+  .title {
+    text-align: center;
+    &_left {
+      text-align: start;
+    }
+  }
+  .heading-2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: $main-color;
+    margin-bottom: 70px;
+  } 
+}
