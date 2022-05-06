@@ -7,7 +7,7 @@
 @import '../blocks/button';
 @import '../blocks/footer';
 @import '../blocks/pagination';
-@import './404';
+@import './notFound';
 @import './galery';
 @import './contacts';
 @import './questions';
@@ -45,28 +45,18 @@ a {
   font-weight: 700;
   line-height: 90px;
   color: $main-color;
-  &_left {
-    text-align: start;
-  }
 }
 
-.heading-2 {
+.subtitle {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
   color: $main-color;
 }
 
-.heading-3 {
+.headline {
   font-weight: 700;
   font-size: 28px;
-  line-height: 30px;
-  color: $main-color;
-}
-
-.heading-4 {
-  font-weight: 700;
-  font-size: 17px;
   line-height: 30px;
   color: $main-color;
 }
@@ -76,9 +66,4 @@ a {
   font-size: 17px;
   line-height: 26px;
   color: $main-color;
-  &_left {
-    padding-right: 695px;
-    margin-top: 18px;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  }
 }

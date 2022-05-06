@@ -1,4 +1,4 @@
-@media (min-width:295px) and (max-width: 441px) {
+@media (min-width:310px) and (max-width: 441px) {
   div.container {
     max-width: 310px;
   }
@@ -57,7 +57,7 @@
       font-size: 50px;
       line-height: 53px;
     }
-    .heading-2 {
+    .subtitle {
       font-size: 40px;
       line-height: 53px;
       margin-bottom: 10px;
@@ -155,13 +155,13 @@
     min-height: 390px;
     background: #355463;
     padding: 40px 31px 60px 31px;
-    .invisible {
-      display: none;
-    }
     &__item {
       display: flex;
       flex-direction: column;
       text-align: center;
+      &:nth-child(n+2) {
+        display: none;
+      }
     }
     &__wrapper {
       position: relative;
@@ -175,6 +175,9 @@
         height: 1px;
         background-color: rgba($color: #FFFFFF, $alpha: 0.2);
       }
+    }
+    &__droits {
+      display: none;
     }
   }
 
@@ -273,7 +276,7 @@
     min-height: 1411px;
     padding: 50px 30px 39px 30px;
     &__item {
-      .heading-2 {
+      .subtitle {
         margin-bottom: 15px;
         font-size: 30px;
         line-height: 39px;
