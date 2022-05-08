@@ -7,6 +7,7 @@
     width: 100%;
     &__wrapper {
       width: 100%;
+      padding: 0;
     }
   }
   
@@ -154,13 +155,16 @@
     min-height: 390px;
     background: #355463;
     padding: 40px 31px 60px 31px;
-    .invisible {
-      display: none;
+    &__items {
+      justify-content: center;
     }
     &__item {
       display: flex;
       flex-direction: column;
       text-align: center;
+      &:nth-child(n+2) {
+        display: none;
+      }
     }
     &__wrapper {
       position: relative;
@@ -174,6 +178,9 @@
         height: 1px;
         background-color: rgba($color: #FFFFFF, $alpha: 0.2);
       }
+    }
+    &__droits {
+      display: none;
     }
   }
 
@@ -198,7 +205,7 @@
       justify-content: space-between;
     }
     .pagination {
-      .invisible {
+      .chield {
         display: none;
       }
     }
@@ -235,7 +242,7 @@
     .pagination {
       display: flex;
       margin-top: 10px;
-      .invisible {
+      .chield {
         display: none;
       }
     }
