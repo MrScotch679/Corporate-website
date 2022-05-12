@@ -1,0 +1,20 @@
+.error-promo {
+  min-height: 824px;
+  background: url(../img/bg/galery.jpg) center (center / cover) no-repeat;
+  padding: 253px;
+  .title {
+    font-weight: 600;
+    font-size: 150px;
+    line-height: 163px;
+    text-align: center;
+  }
+  .headline {
+    line-height: 30px;
+    text-align: center;
+  }
+  .button {
+    width: 162px;
+    margin: 0 auto;
+    margin-top: 37px;
+  }
+}

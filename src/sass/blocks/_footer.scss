@@ -2,12 +2,14 @@
   min-height: 468px;
   background: #355463;
   padding: 86px 55px 70px 45px;
+  .paragraph {
+    line-height: 30px;
+  }
   &__items {
     display: flex;
     justify-content: space-between;
   }
   &__item {
-    list-style: none;
     padding: 0;
     margin: 0;
   }

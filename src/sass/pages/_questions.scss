@@ -1,0 +1,17 @@
+.questions {
+  min-height: 1411px;
+  padding: 50px 0 39px 0;
+  background: #E2E9EC;
+  &__item {
+    .subtitle {
+      text-align: left;
+      font-weight: 500;
+      color: #011313;
+      margin-bottom: 20px;
+    }
+    .paragraph {
+      color: #011313;
+      margin-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+.catalog {
+  min-height: 838px;
+  background: #E2E9EC;
+  padding: 67px 0 95px 0;
+  .subtitle {
+    text-align: center;
+    color: #355463;
+  }
+}
+
+.arrow-dark {
+  position: absolute;
+  top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 93px;
+  height: 93px;
+  border-radius: 100%;
+  &:hover {
+    background-color: rgba($color: #FFFFFF, $alpha: 0.34);
+  }
+  &_left {
+    left: 5px;
+  }
+  &_right {
+    right: 0px;
+    .next_dark {
+      transform: scale(-1);
+    }
+  }
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  margin-top: 45px;
+  display: flex;
+  padding-left: 40px;
+  &-item {
+    width: 363px;
+    margin-right: 20px;
+    &_large {
+      width: 438px;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+  &-preview {
+    position: relative;
+    &__img {
+      border-radius: 15px 15px 0px 0px;
+      width: 100%;
+      height: 100%;
+    }
+    &__arrow {
+      display: flex;
+      align-items: center;
+      width: 46px;
+      height: 93px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      &:hover {
+        background: rgba($color: #FFFFFF, $alpha: 0.4);
+      }
+      &_left {
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        padding-left: 3px;
+      }
+      &_right {
+        right: 0;
+        justify-content: flex-end;
+        padding-right: 3px;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        .next_white {
+          transform: scale(-1);
+        }
+      }
+    } 
+  }
+  &-info {
+    padding: 21px 30px 10px 16px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+    .headline {
+      color: #011313;
+      margin-bottom: 24px;
+    }
+    &__about-car {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    &__items {
+      display: flex;
+      margin-top: 22px;
+      justify-content: space-between;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      width: 23px;
+      height: 23px;
+    }
+    .paragraph {
+      color: #557180;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+.about-us {
+  background: url(../img/bg/bg-car.jpg) center (center / cover) no-repeat;
+  min-height: 735px;
+  &__wrapper {
+    padding: 121px 712px 135px 70px;
+  }
+  .title {
+    line-height: 90px;
+  }
+  .paragraph {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: $main-color;
+  }
+  .button {
+    margin-top: 48px;
+  }
+} 
+
+.journey {
+  min-height: 743px;
+  background: #E2E9EC;
+  padding: 70px 0 80px 0;
+  .title {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 145px;
+  }
+  .button {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 21px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 340px;
+    width: 168px;
+    height: 42px;
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  &__item {
+    margin: 0 25px;
+  }
+  &__preview {
+    width: 687px;
+    height: 593px;
+    border-radius: 25px;
+  }
+}
+
+.contact-us {
+  min-height: 686px;
+  background-color: #FFFFFF;
+  padding: 100px 0 100px 0;
+  .title {
+    font-size: 84px;
+    line-height: 84px;
+    text-align: center;
+    color: #355463;
+  }
+  .headline {
+    text-align: center;
+    color: #6F8FA0;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    max-width: 670px;
+    min-height: 295px;
+    margin: 0 auto;
+    margin-top: 48px;
+    :nth-child(2) {
+      margin: 12px 0 12px 0;
+    }
+  }
+  &__input-area {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 35px;
+    border-color: #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    opacity: 0.5;
+    &:focus {
+      opacity: 1;
+      outline: none;
+    }
+  }
+}

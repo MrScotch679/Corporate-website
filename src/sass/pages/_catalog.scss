@@ -1,0 +1,10 @@
+.full-catalog {
+  min-height: 2029px;
+  background: #E2E9EC;
+  padding: 50px 40px 100px 40px;
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

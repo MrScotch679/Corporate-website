@@ -1,0 +1,36 @@
+.service-list {
+  min-height: 1624px;
+  background: #E2E9EC;
+  padding: 50px 0 35px 0;
+  &__items {
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    margin-bottom: 30px;
+    .button {
+      position: absolute;
+      top: 321px;
+      left: 265px;
+      width: 137px;
+      height: 34px;
+    }
+    .title {
+      position: absolute;
+      top: 108px;
+      left: 82px;
+      font-size: 84px;
+    }
+  }
+  &__preview {
+    width: 666px;
+    height: 483px;
+    border-radius: 20px;
+  }
+  .pagination {
+    display: none;
+  }
+}
