@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
-  .background {
+  &__background {
     &:hover {
       background: #355463;
       border-radius: 100%;
@@ -19,7 +19,7 @@
       color: #FFFFFF;
     }
   }
-  &-wrapper {
+  &__item {
     width: 50px;
     height: 50px;
     display: flex;
@@ -31,7 +31,7 @@
       margin: 0 10px  0 25px;
     }
   }
-  .arrow-pre {
+  .arrow-prev {
     position: absolute;
     left: -100%;
     top: 25%;

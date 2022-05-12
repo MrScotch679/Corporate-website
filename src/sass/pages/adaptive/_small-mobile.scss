@@ -1,18 +1,18 @@
-@media (min-width:442px) and (max-width: 480px) {
-  div.container {
-    max-width: 414px;
+@media screen and (max-width: 320px) {
+  .container {
+    max-width: 310px;
   }
 
   .header {
     width: 100%;
     &__wrapper {
       width: 100%;
-      padding: 0;
     }
   }
   
   .logo {
     order: 2;
+    margin: 30px 0 30px 0;
   }
 
   .social {
@@ -20,7 +20,7 @@
   }
 
   .navigation {
-    display: flex;
+    flex-direction: column;
   }
 
   .menu {
@@ -52,7 +52,10 @@
 
   .promo {
     min-height: 736px;
-    padding: 220px 29px 0 29px;
+    padding-bottom: 50px;
+    &__wrapper {
+      padding: 0;
+    }
     .title {
       font-size: 50px;
       line-height: 53px;
@@ -155,9 +158,6 @@
     min-height: 390px;
     background: #355463;
     padding: 40px 31px 60px 31px;
-    &__items {
-      justify-content: center;
-    }
     &__item {
       display: flex;
       flex-direction: column;
@@ -193,21 +193,11 @@
       &-item {
         margin-right: 0;
       }
-      &-preview {
-        &__img {
-          width: 100%;
-        }
-      }
     }
     &__items {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-    }
-    .pagination {
-      .chield {
-        display: none;
-      }
     }
     .arrow-pre {
       display: none;
@@ -234,7 +224,7 @@
     }
   }
 
-  //service-list.html//
+  //services.html//
   .service-list {
     min-height: 1624px;
     background: #E2E9EC;
@@ -246,7 +236,7 @@
         display: none;
       }
     }
-    .arrow-pre {
+    .arrow-prev {
       display: none;
     }
     .arrow-next {
@@ -352,113 +342,66 @@
       }
     }
     .button {
-      position: relative;
-      margin-top: 50px;
-      font-size: 28px;
-      width: 172px;
-      height: 38px;
+      width: 200px;
       padding: 0;
-      background: none;
-      color: #ffff;
       &::before {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 140px;
-        height: 1px;
-        background-color: #ffff;
+        left: 10px;
       }
     }
   }
 
   //galery-promo.html//
   .galery-promo {
-    min-height: 600px;
-    padding: 271px 0 286px 0;
+    background: url(../img/bg/galery.jpg) center (center / cover) no-repeat;
+    min-height: 650px;
+    .preview {
+      display: none;
+    }
     .title {
-      text-align: center;
-      font-size: 50px;
+      line-height: 65px;
+      top: 0px;
     }
     .button {
-      margin-top: 30px;
+      top: 150px;
     }
   }
   
-  .collapse {
-    min-height: 90px;
-    background: #355463;
-    display: flex;
-    align-items: center;
+  .tabs {
     &__wrapper {
       flex-direction: column;
+      align-items: center;
     }
-    .paragraph {
-      justify-content: flex-start;
-      &:hover {
-        background: #557180;
-        cursor: pointer;
-      }
-      &:first-child {
-        width: 300px;
-      }
+    &__item {
+      height: 60px;
     }
-  }
-  
-  .info-about {
-    padding: 50px 0 65px 0;
-    .title {
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 28px;
-      line-height: 30px;
-      color: #011313;
-    }
-    .info-1 {
+    &__content {
       display: none;
-      flex-direction: column;
-      padding: 0;
-      &__items {
-        min-height: 566px;
-        background: #E2E9EC;
-        border-radius: 0;
-        padding: 0;
+      padding: 50px 0 65px 0;
+      &_active {
+        display: block;
       }
-      &__item {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 13px;
-        &:last-child {
-          margin-bottom: 0;
+      .prices {
+        padding: 0 5px 0 5px;
+        min-height: 500px;
+        &__items {
+          min-height: 520px;
+          padding: 16px 10px 15px 10px;
         }
       }
-    }
-    .info-2 {
-      display: none;
-      flex-direction: column;
-      padding: 0 10px;
-    }
-    .info-3 {
-      display: flex;
-      flex-direction: column;
-      padding: 0 10px;
-      &__items {
-        min-height: 566px;
-        display: flex;
-        flex-wrap: wrap;
+      .descriptions {
+        padding: 0 15px 0 15px;
       }
-      &__item {
-        max-width: 450px;
-        max-height: 451px;
-      }
-      &__photo {
-        width: 100%;
-        height: 100%;
+      .previews {
+        padding: 0 5px 0 5px;
+        &__item {
+          width: 300px;
+          height: 310px;
+        }
       }
     }
   }
 
-  //error-promo.html//
+  //notFound.html//
   .error-promo {
     min-height: 736px;
     padding: 253px 0 100px 0;

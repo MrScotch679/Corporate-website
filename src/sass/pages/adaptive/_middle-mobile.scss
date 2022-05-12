@@ -1,18 +1,18 @@
-@media (min-width:310px) and (max-width: 441px) {
-  div.container {
-    max-width: 310px;
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 456px;
   }
 
   .header {
     width: 100%;
     &__wrapper {
       width: 100%;
+      padding: 0;
     }
   }
   
   .logo {
     order: 2;
-    margin: 30px 0 30px 0;
   }
 
   .social {
@@ -20,7 +20,7 @@
   }
 
   .navigation {
-    flex-direction: column;
+    display: flex;
   }
 
   .menu {
@@ -52,9 +52,9 @@
 
   .promo {
     min-height: 736px;
-    padding-bottom: 50px;
+    padding: 220px 29px 0 29px;
     &__wrapper {
-      padding: 0;
+      padding: 0 100px 0 0;
     }
     .title {
       font-size: 50px;
@@ -64,11 +64,6 @@
       font-size: 40px;
       line-height: 53px;
       margin-bottom: 10px;
-    }
-    .paragraph {
-      &_left {
-        padding-right: 0px;
-      }
     } 
   }
 
@@ -158,6 +153,9 @@
     min-height: 390px;
     background: #355463;
     padding: 40px 31px 60px 31px;
+    &__items {
+      justify-content: center;
+    }
     &__item {
       display: flex;
       flex-direction: column;
@@ -193,18 +191,18 @@
       &-item {
         margin-right: 0;
       }
+      &-preview {
+        &__img {
+          width: 100%;
+        }
+      }
     }
     &__items {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    .pagination {
-      .chield {
-        display: none;
-      }
-    }
-    .arrow-pre {
+    .arrow-prev {
       display: none;
     }
     .arrow-next {
@@ -237,11 +235,8 @@
     .pagination {
       display: flex;
       margin-top: 10px;
-      .chield {
-        display: none;
-      }
     }
-    .arrow-pre {
+    .arrow-prev {
       display: none;
     }
     .arrow-next {
@@ -249,28 +244,28 @@
     }
     &__items {
       padding: 0;
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
     &__item {
-      position: relative;
-      margin-bottom: 20px;
+      max-width: 100%;
+      height: 350px;
       .button {
         top: 210px;
-        left: 90px;
+        left: 50%;
+        transform: translateX(-50%);
       }
       .title {
-        position: absolute;
         top: 90px;
-        left: 8px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 45px;
         line-height: 50px;
       }
     }
     &__preview {
-      width: 310px;
-      height: 340px;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -299,7 +294,6 @@
       flex-direction: column;
     }
   }
-  
   .contacts {
     .title {
       font-size: 50px;
@@ -312,7 +306,6 @@
       margin-bottom: 30px;
     }
   }
-  
   .feedback {
     .title {
       display: none;
@@ -347,22 +340,11 @@
       }
     }
     .button {
-      position: relative;
-      margin-top: 50px;
-      font-size: 28px;
-      width: 172px;
-      height: 38px;
+      width: 200px;
       padding: 0;
-      background: none;
-      color: #ffff;
       &::before {
         content: "";
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 140px;
-        height: 1px;
-        background-color: #ffff;
+        left: 10px;
       }
     }
   }
@@ -375,12 +357,11 @@
       display: none;
     }
     .title {
-      font-size: 60px;
-      text-align: center;
-      top: 271px;
+      line-height: 80px;
+      top: 200px;
     }
     .button {
-      top: 480px;
+      top: 400px;
     }
   }
   
@@ -412,14 +393,15 @@
       .previews {
         padding: 0 5px 0 5px;
         &__item {
-          width: 300px;
-          height: 310px;
+          width: 100%;
+          height: 350px;
+          margin-bottom: 10px;
         }
       }
     }
   }
 
-  //notFound.html//
+  //error-promo.html//
   .error-promo {
     min-height: 736px;
     padding: 253px 0 100px 0;

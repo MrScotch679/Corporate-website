@@ -20,4 +20,21 @@
   &__arrow {
     margin-left: 10px;
   }
+  &_without-border {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 28px;
+    width: 200px;
+    height: 38px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 140px;
+      height: 1px;
+      background-color: #000000;
+    }
+  }
 }
