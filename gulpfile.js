@@ -10,30 +10,30 @@ const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 
 const pathes = {
-    root: 'dist/',
+    root: 'docs/',
     styles: {
         src: './src/sass/**/*.scss',
-        dest: './dist/css'
+        dest: './docs/css'
     },
     layout: {
         src: './src/*.html',
-        dest: './dist/'
+        dest: './docs/'
     },
     fonts: {
         src: './src/fonts/*.+(woff|ttf)',
-        dest: './dist/fonts'
+        dest: './docs/fonts'
     },
     images: {
         src: './src/img/**',
-        dest: './dist/img/'
+        dest: './docs/img/'
     },
     icons: {
         src: './src/icons/**',
-        dest: './dist/icons/'
+        dest: './docs/icons/'
     },
     js: {
         src: './src/js/**/*.js',
-        dest: './dist/js/'
+        dest: './docs/js/'
     }
 };
 
@@ -41,7 +41,7 @@ const pathes = {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "dist"
+            baseDir: "docs"
         }
     });
 });

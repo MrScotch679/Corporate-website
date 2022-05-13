@@ -510,10 +510,12 @@ a {
   font-weight: 700;
   line-height: 90px;
   color: #FFFFFF;
-  text-align: center;
 }
 .title_left {
   text-align: start;
+}
+.title_center {
+  text-align: center;
 }
 
 .subtitle {
@@ -538,7 +540,7 @@ a {
 }
 
 .promo {
-  min-height: 824px;
+  min-height: 100vh;
   background: url(../../img/bg/head-bg.jpg) center center/cover no-repeat;
   padding: 275px 40px 0 45px;
 }
@@ -1189,13 +1191,6 @@ a {
 .about-us .title {
   line-height: 90px;
 }
-.about-us .paragraph {
-  margin-top: 12px;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
 .about-us .button {
   margin-top: 48px;
 }
@@ -1293,7 +1288,7 @@ a {
 
   .logo {
     order: 2;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
   }
 
   .social {
@@ -1689,6 +1684,7 @@ a {
 
   .logo {
     order: 2;
+    margin: 20px 0 20px 0;
   }
 
   .social {
@@ -1696,7 +1692,7 @@ a {
   }
 
   .navigation {
-    display: flex;
+    flex-direction: column;
   }
 
   .menu {

@@ -25,9 +25,11 @@ font-size: 90px;
 font-weight: 700;
 line-height: 90px;
 color: $main-color;
-text-align: center;
   &_left {
     text-align: start;
+  }
+  &_center {
+    text-align: center;
   }
 }
 
