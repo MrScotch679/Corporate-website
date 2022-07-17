@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/app.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>WildCars</title>
-</head>
+<script defer="defer" src="vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fancyapps_ui_dist_fancybox_esm_-876435.js"></script><script defer="defer" src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 <body>
   <header class="header">
     <div class="container">
@@ -28,11 +27,14 @@
             </div>
             <div class="menu__wrapper">
               <ul class="menu__list">
-                <li><a  class="menu__item" href="./catalog.html">Каталог</a></li>
-                <li><a  class="menu__item" href="./about-us.html">О нас</a></li>
-                <li><a  class="menu__item" href="./services.html">Услуги</a></li>
-                <li><a  class="menu__item" href="./questions.html">Вопросы/ответы</a></li>
-                <li><a  class="menu__item" href="./contacts.html">Контакты</a></li>
+                <li><a class="menu__item" href="./index.html">Главная</a></li>
+                <li><a class="menu__item" href="./catalog.html">Каталог</a></li>
+                <li><a class="menu__item" href="./about-us.html">О нас</a></li>
+                <li><a class="menu__item" href="./services.html">Услуги</a></li>
+                <li><a class="menu__item" href="./questions.html">Вопросы/ответы</a></li>
+                <li><a class="menu__item" href="./contacts.html">Контакты</a></li>
+                <li><a class="menu__item" href="./galery.html">Галерия</a></li>
+                <li><a class="menu__item" href="./notFound.html">404</a></li>
               </ul>
             </div>
           </div>
@@ -58,22 +60,12 @@
   <section class="catalog">
     <div class="container">
       <h2 class="subtitle">Наш каталог</h2>
-      <div class="arrow-dark arrow-dark_left">
-        <img src="icons/arrow-long-l.svg" alt="left" class="pre_dark">
-      </div>
-      <div class="arrow-dark arrow-dark_right">
-          <img src="icons/arrow-long-l.svg" alt="right" class="next_dark">
-      </div>
       <div class="carousel">  
           <div class="carousel-item">
             <div class="carousel-preview">
-              <div class="carousel-preview__arrow carousel-preview__arrow_left">
-                <img src="icons/arrow-l-w.svg" alt="left" class="pre_white">
-              </div>
               <img src="img/car-1.jpg" alt="car-1" class="carousel-preview__img">
-              <div class="carousel-preview__arrow carousel-preview__arrow_right">
-                <img src="icons/arrow-l-w.svg" alt="right" class="next_white">
-              </div>
+              <img src="img/car-2.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-3.jpg" alt="car-1" class="carousel-preview__img">
             </div>
             <div class="carousel-info">
               <div class="headline">Audi Q8</div>
@@ -107,93 +99,117 @@
           </div>
           <div class="carousel-item">
             <div class="carousel-preview">
-              <div class="carousel-preview__arrow carousel-preview__arrow_left">
-                <img src="icons/arrow-l-w.svg" alt="left" class="pre_white">
-              </div>
-              <img src="img/car-2.jpg" alt="car-2" class="carousel-preview__img">
-              <div class="carousel-preview__arrow carousel-preview__arrow_right">
-                <img src="icons/arrow-l-w.svg" alt="right" class="next_white">
-              </div>
-            </div>
-            <div class="carousel-info">
-              <div class="headline">Audi Q8</div>
-              <div class="carousel-info__about-car">
-                <div class="paragraph">Бензиновый двигатель</div>
-                <div class="paragraph">От 250 $ / в день</div>
-              </div>
-              <div class="carousel-info__about-car">
-                <div class="paragraph">2008/2021</div>
-                <div class="paragraph">От 1 750 $ / в неделю</div>
-              </div>
-              <div class="carousel-info__items">
-                <div class="carousel-info__item">
-                  <img src="icons/speed.svg" alt="speed" class="carousel-info__img">
-                  <div class="paragraph">305 км/ч</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/friends.svg" alt="friends" class="carousel-info__img">
-                  <div class="paragraph">5 мест</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/car.svg" alt="car" class="carousel-info__img">
-                  <div class="paragraph">600 л.с.</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/discounts.svg" alt="discounts" class="carousel-info__img">
-                  <div class="paragraph">Скидки <br>до 40%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-preview">
-              <div class="carousel-preview__arrow carousel-preview__arrow_left">
-                <img src="icons/arrow-l-w.svg" alt="left" class="pre_white">
-              </div>
-              <img src="img/car-3.jpg" alt="car-3" class="carousel-preview__img">
-              <div class="carousel-preview__arrow carousel-preview__arrow_right">
-                <img src="icons/arrow-l-w.svg" alt="right" class="next_white">
-              </div>
-            </div>
-            <div class="carousel-info">
-              <div class="headline">Audi Q8</div>
-              <div class="carousel-info__about-car">
-                <div class="paragraph">Бензиновый двигатель</div>
-                <div class="paragraph">От 250 $ / в день</div>
-              </div>
-              <div class="carousel-info__about-car">
-                <div class="paragraph">2008/2021</div>
-                <div class="paragraph">От 1 750 $ / в неделю</div>
-              </div>
-              <div class="carousel-info__items">
-                <div class="carousel-info__item">
-                  <img src="icons/speed.svg" alt="speed" class="carousel-info__img">
-                  <div class="paragraph">305 км/ч</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/friends.svg" alt="friends" class="carousel-info__img">
-                  <div class="paragraph">5 мест</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/car.svg" alt="car" class="carousel-info__img">
-                  <div class="paragraph">600 л.с.</div>
-                </div>
-                <div class="carousel-info__item">
-                  <img src="icons/discounts.svg" alt="discounts" class="carousel-info__img">
-                  <div class="paragraph">Скидки <br>до 40%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carousel-preview">
-              <div class="carousel-preview__arrow carousel-preview__arrow_left">
-                <img src="icons/arrow-l-w.svg" alt="left" class="pre_white">
-              </div>
               <img src="img/car-1.jpg" alt="car-1" class="carousel-preview__img">
-              <div class="carousel-preview__arrow carousel-preview__arrow_right">
-                <img src="icons/arrow-l-w.svg" alt="right" class="next_white">
+              <img src="img/car-2.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-3.jpg" alt="car-1" class="carousel-preview__img">
+            </div>
+            <div class="carousel-info">
+              <div class="headline">Audi Q8</div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">Бензиновый двигатель</div>
+                <div class="paragraph">От 250 $ / в день</div>
               </div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">2008/2021</div>
+                <div class="paragraph">От 1 750 $ / в неделю</div>
+              </div>
+              <div class="carousel-info__items">
+                <div class="carousel-info__item">
+                  <img src="icons/speed.svg" alt="speed" class="carousel-info__img">
+                  <div class="paragraph">305 км/ч</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/friends.svg" alt="friends" class="carousel-info__img">
+                  <div class="paragraph">5 мест</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/car.svg" alt="car" class="carousel-info__img">
+                  <div class="paragraph">600 л.с.</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/discounts.svg" alt="discounts" class="carousel-info__img">
+                  <div class="paragraph">Скидки <br>до 40%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-preview">
+              <img src="img/car-2.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-1.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-3.jpg" alt="car-1" class="carousel-preview__img">
+            </div>
+            <div class="carousel-info">
+              <div class="headline">Audi Q8</div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">Бензиновый двигатель</div>
+                <div class="paragraph">От 250 $ / в день</div>
+              </div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">2008/2021</div>
+                <div class="paragraph">От 1 750 $ / в неделю</div>
+              </div>
+              <div class="carousel-info__items">
+                <div class="carousel-info__item">
+                  <img src="icons/speed.svg" alt="speed" class="carousel-info__img">
+                  <div class="paragraph">305 км/ч</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/friends.svg" alt="friends" class="carousel-info__img">
+                  <div class="paragraph">5 мест</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/car.svg" alt="car" class="carousel-info__img">
+                  <div class="paragraph">600 л.с.</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/discounts.svg" alt="discounts" class="carousel-info__img">
+                  <div class="paragraph">Скидки <br>до 40%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-preview">
+              <img src="img/car-3.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-2.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-1.jpg" alt="car-1" class="carousel-preview__img">
+            </div>
+            <div class="carousel-info">
+              <div class="headline">Audi Q8</div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">Бензиновый двигатель</div>
+                <div class="paragraph">От 250 $ / в день</div>
+              </div>
+              <div class="carousel-info__about-car">
+                <div class="paragraph">2008/2021</div>
+                <div class="paragraph">От 1 750 $ / в неделю</div>
+              </div>
+              <div class="carousel-info__items">
+                <div class="carousel-info__item">
+                  <img src="icons/speed.svg" alt="speed" class="carousel-info__img">
+                  <div class="paragraph">305 км/ч</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/friends.svg" alt="friends" class="carousel-info__img">
+                  <div class="paragraph">5 мест</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/car.svg" alt="car" class="carousel-info__img">
+                  <div class="paragraph">600 л.с.</div>
+                </div>
+                <div class="carousel-info__item">
+                  <img src="icons/discounts.svg" alt="discounts" class="carousel-info__img">
+                  <div class="paragraph">Скидки <br>до 40%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-preview">
+              <img src="img/car-1.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-2.jpg" alt="car-1" class="carousel-preview__img">
+              <img src="img/car-3.jpg" alt="car-1" class="carousel-preview__img">
             </div>
             <div class="carousel-info">
               <div class="headline">Audi Q8</div>
@@ -237,7 +253,7 @@
           Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным.
         </div>
         <button class="button">
-          <a class="button__link" href="#">About Us</a>
+          <a class="button__link" href="./about-us.html">About Us</a>
         </button>
       </div>
     </div>
@@ -246,7 +262,7 @@
     <div class="container">
       <div class="title">Комфортные <br> путешествия</div>
       <button class="button">
-        <a class="button__link" href="#">Перейти
+        <a class="button__link" href="./services.html">Перейти
           <img src="icons/arrow-black.svg" alt="arrow-black" class="button__arrow">
         </a>
       </button>
@@ -260,7 +276,7 @@
         <div class="journey__item">
           <img src="img/car-3.jpg" alt="car-3" class="journey__preview">
         </div>
-  </section>
+  </div></div></section>
   <section class="contact-us">
     <div class="container">
       <h2 class="title">Остались вопросы?</h2>
@@ -269,7 +285,7 @@
         <input type="text" placeholder="Как вас зовут?" class="contact-us__input-area">
         <input type="number" placeholder="Номер телефона" class="contact-us__input-area">
         <input type="email" placeholder="Ваша электронная почта" class="contact-us__input-area">
-        <button class="button button_without-border">
+        <button class="button button_without-border open">
           Отправить
           <img src="icons/arrow-black.svg" alt="arrow-black" class="button__arrow">
         </button>
@@ -295,8 +311,8 @@
         </ul>
         <ul class="footer__item">
           <li><a class="paragraph" href="#">Аренда авто</a>
-          <li><a class="paragraph" href="#">Торжественные мероприятия</a>
-          <li><a class="paragraph" href="#">Трансфер и такси-картер</a></li>
+          </li><li><a class="paragraph" href="#">Торжественные мероприятия</a>
+          </li><li><a class="paragraph" href="#">Трансфер и такси-картер</a></li>
           <li><a class="paragraph" href="#">Водители</a></li>
           <li><a class="paragraph" href="#">Последующее авто событие</a></li>
           <li><a class="paragraph" href="#">Мастер-класс от профи</a></li>
@@ -331,5 +347,15 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="container">
+      <div class="modal__window">
+        <div class="modal__close close">✖</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img" alt="img" class="modal__img">
+        <div class="paragraph">Данная функция временно недоступна</div>
+        <button class="button close" data-close>Я подожду <span>&#10084;</span></button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
