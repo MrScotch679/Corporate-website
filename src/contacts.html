@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/app.css">
   <title>Вопрос/ответ</title>
 </head>
 <body>
@@ -28,11 +27,14 @@
             </div>
             <div class="menu__wrapper">
               <ul class="menu__list">
+                <li><a  class="menu__item" href="./index.html">Главная</a></li>
                 <li><a  class="menu__item" href="./catalog.html">Каталог</a></li>
                 <li><a  class="menu__item" href="./about-us.html">О нас</a></li>
                 <li><a  class="menu__item" href="./services.html">Услуги</a></li>
                 <li><a  class="menu__item" href="./questions.html">Вопросы/ответы</a></li>
                 <li><a  class="menu__item" href="./contacts.html">Контакты</a></li>
+                <li><a  class="menu__item" href="./galery.html">Галерия</a></li>
+                <li><a  class="menu__item" href="./notFound.html">404</a></li>
               </ul>
             </div>
           </div>
@@ -73,7 +75,7 @@
               <input type="text" placeholder="Как вас зовут?" class="feedback__input-area">
               <input type="number" placeholder="Номер телефона" class="feedback__input-area">
               <input type="email" placeholder="Ваша электронная почта" class="feedback__input-area">
-              <button class="button button_without-border">
+              <button class="button button_without-border open">
                 Отправить
                 <img src="icons/arrow-r-w.svg" alt="arrow-black" class="button__arrow">
               </button>
@@ -140,5 +142,15 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="container">
+      <div class="modal__window">
+        <div class="modal__close close">✖</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img"" alt="img" class="modal__img">
+        <div class="paragraph">Данная функция временно недоступна</div>
+        <button class="button close">Я подожду <span>&#10084;</span></button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

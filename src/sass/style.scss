@@ -3,6 +3,8 @@
 
 @import 'libs/bootstrap-reboot.min';
 @import 'libs/fonts';
+@import 'libs/slick/mainSlider';
+@import 'libs/slick/cardSlider';
 
 @import 'blocks/main';
 @import 'blocks/promo';
@@ -10,6 +12,7 @@
 @import 'blocks/button';
 @import 'blocks/footer';
 @import 'blocks/pagination';
+@import 'blocks/scrollbar';
 
 @import 'pages/notFound';
 @import 'pages/galery';
@@ -19,4 +22,5 @@
 @import 'pages/abous-us';
 @import 'pages/catalog';
 @import 'pages/index';
+@import 'pages/modalDialog';
 @import 'pages/adaptive/media';

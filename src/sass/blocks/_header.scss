@@ -25,8 +25,6 @@
   color: $main-color;
   &:hover {
     color: red;
-    box-shadow: 0px 0px 90px 5px #ffff;
-    background: rgba($color: #ffff, $alpha: 0.3);
   }
   &__car-top {
     width: 60px;
@@ -51,6 +49,10 @@
     height: 34px;
     background: rgba($color: #FFFFFF, $alpha: 0.23);
     border-radius: 100px;
+    &:hover {
+      cursor: pointer;
+      background: rgba($color: #ffff, $alpha: 0.4);
+    }
   }
   &__button {
     font-weight: 800;
@@ -69,20 +71,24 @@
       margin-bottom: 2px;
     }
   }
-  &:hover {
-    cursor: pointer;
-    background: rgba($color: #ffff, $alpha: 0.4);
-  }
-  &__wrapper { 
+  &__wrapper {
+    display: none;
     position: absolute;
     left: 50%;
     top: 60px;
     transform: translateX(-50%);
-    width: 616px;
     height: 70px;
-    padding: 0 50px 0 50px;
+    padding: 0 30px 0 30px;
     background: rgba($color: #FFFFFF, $alpha: 0.23);
     border-radius: 100px;
+    &_active {
+      display: flex;
+      justify-content: center;
+    }
+    &:hover {
+      cursor: pointer;
+      background: rgba($color: #ffff, $alpha: 0.4);
+    }
   }
   &__list {
     display: flex;
@@ -91,11 +97,11 @@
     width: 100%;
   }
   &__item {
+    white-space: nowrap;
     font-weight: 700;
     font-size: 17px;
     line-height: 70px;
     color: $main-color;
-    margin: 0;
-    text-decoration: none;
+    padding: 0 10px;
   }
 }
