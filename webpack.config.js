@@ -50,14 +50,14 @@ module.exports = {
   },
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'docs')
+    path: path.resolve(__dirname, 'dist')
   },
   optimization: optimization(),
   devServer: {
     port: 4000,
     hot: isDev,
   },
-  devtool: isDev ? 'source-map' : '',
+  devtool: isDev ? 'source-map' : false,
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
