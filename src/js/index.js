@@ -20,6 +20,14 @@ window.addEventListener('DOMContentLoaded', function() {
     autoplay: true,
     autoplaySpeed: 3000,
     draggable: true,
+    responsive: [{
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        autoplay: false,
+        variableWidth: true,
+      }
+    }]
   });
 
   $('.carousel .carousel-preview').slick({

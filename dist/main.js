@@ -36,7 +36,15 @@ window.addEventListener('DOMContentLoaded', function () {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    draggable: true
+    draggable: true,
+    responsive: [{
+      breakpoint: 320,
+      settings: {
+        slidesToShow: 1,
+        autoplay: false,
+        variableWidth: true
+      }
+    }]
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel .carousel-preview').slick({
     draggable: false
