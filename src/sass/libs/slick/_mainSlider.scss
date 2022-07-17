@@ -1,0 +1,26 @@
+@import url('E:/For Work/Programmer/ex-gumina/node_modules/slick-carousel/slick/slick.scss');
+
+.carousel  {
+  .slick-arrow {
+    border: none;
+    font-size: 0;
+    position: absolute;
+    top: -120px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    z-index: 10;
+    background: url('E:/For Work/Programmer/ex-gumina/dist/icons/arrow-long-l.svg') center / 35px no-repeat;
+    &:hover {
+      border-radius: 100%;
+      background-color: rgba($color: #FFFFFF, $alpha: 0.34);
+    }
+    &.slick-prev {
+      left: 0px;
+    } 
+    &.slick-next {
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+}

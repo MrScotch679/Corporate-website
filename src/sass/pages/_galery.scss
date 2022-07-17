@@ -7,11 +7,12 @@
     align-items: center;
   }
   .preview {
-    width: 360px;
-    height: 340px;
-    &_active {
-      width: 1440px;
-      height: 100%;
+    width: calc(100%/4);
+    height: 100%;
+    &_large {
+      height: 100vh;
+      width: 100%;
+      display: block;
     }
   }
   .title {
@@ -54,6 +55,9 @@
     }
     &:first-child {
       width: 300px;
+    }
+    &_active {
+      background: #557180;
     }
   }
   &__content {

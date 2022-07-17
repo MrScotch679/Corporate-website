@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/app.css">
   <title>Ваш выбор</title>
 </head>
 <body>
@@ -28,11 +27,14 @@
             </div>
             <div class="menu__wrapper">
               <ul class="menu__list">
+                <li><a  class="menu__item" href="./index.html">Главная</a></li>
                 <li><a  class="menu__item" href="./catalog.html">Каталог</a></li>
                 <li><a  class="menu__item" href="./about-us.html">О нас</a></li>
                 <li><a  class="menu__item" href="./services.html">Услуги</a></li>
                 <li><a  class="menu__item" href="./questions.html">Вопросы/ответы</a></li>
                 <li><a  class="menu__item" href="./contacts.html">Контакты</a></li>
+                <li><a  class="menu__item" href="./galery.html">Галерия</a></li>
+                <li><a  class="menu__item" href="./notFound.html">404</a></li>
               </ul>
             </div>
           </div>
@@ -49,26 +51,24 @@
     </div>
   </header>
   <section class="galery-promo">
-    <div class="container">
       <div class="galery-promo__wrapper">
-        <img src="img/bg/galery.jpg" alt="preview" class="preview preview_active">
-        <img src="img/car-1.jpg" alt="preview" class="preview">
-        <img src="img/car-2.jpg" alt="preview" class="preview">
-        <img src="img/car-3.jpg" alt="preview" class="preview">
-        <img src="img/car-1.jpg" alt="preview" class="preview">
+        <img src="img/bg/galery.jpg" alt="preview" class="preview preview_large">
+        <img data-fancybox="galleryOne" src="img/car-1.jpg" alt="preview" class="preview">
+        <img data-fancybox="galleryOne" src="img/car-2.jpg" alt="preview" class="preview">
+        <img data-fancybox="galleryOne" src="img/car-3.jpg" alt="preview" class="preview">
+        <img data-fancybox="galleryOne" src="img/car-1.jpg" alt="preview" class="preview">
         <div class="title">Audi Q8</div>
-        <button class="button">Забронировать</button>
+        <button class="button open">Забронировать</button>
       </div>
-    </div>
   </section>
   <section class="tabs">
     <ul class="tabs__wrapper">
-      <li class="tabs__item">Технические характеристики</li>
+      <li class="tabs__item tabs__item_active">Технические характеристики</li>
       <li class="tabs__item">Описание</li>
       <li class="tabs__item">Галерея</li>
     </ul>
     <div class="container">
-      <div class="tabs__content">
+      <div class="tabs__content tabs__content_active">
         <div class="tabs__prices prices">
           <div class="title">Технические характеристики</div>
           <div class="prices__items">
@@ -138,27 +138,27 @@
           </div>
         </div>
       </div>
-      <div class="tabs__content tabs__content_active">
+      <div class="tabs__content">
         <div class="tabs__previews previews">
           <div class="title">Галерея</div>
           <div class="previews__items">
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
             <div class="previews__item">
-              <img src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
+              <img data-fancybox="gallery" src="img/bg/bg-car.jpg" alt="photo" class="previews__photo">
             </div>
           </div>
         </div>
@@ -220,5 +220,15 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="container">
+      <div class="modal__window">
+        <div class="modal__close close">✖</div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" alt="cookies-img"" alt="img" class="modal__img">
+        <div class="paragraph">Данная функция временно недоступна</div>
+        <button class="button close">Я подожду <span>&#10084;</span></button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
