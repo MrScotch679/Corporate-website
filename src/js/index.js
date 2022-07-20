@@ -8,7 +8,7 @@ import '../css/fancybox.css';
 import menuTrigger from './modules/menuTrigger.js';
 import modalTrigger from './modules/modalTrigger.js';
 import modalClose from './modules/modalClose.js';
-import accordion from './modules/accordion.js';
+import accordion from './modules/tabs.js';
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -24,21 +24,18 @@ window.addEventListener('DOMContentLoaded', function() {
       breakpoint: 1025,
       settings: {
         slidesToShow: 3,
-        draggable: true,
       }
     },
     {
       breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        draggable: true,
       }
     },
     {
       breakpoint: 426,
       settings: {
         slidesToShow: 1,
-        draggable: true,
       }
     }]
   });

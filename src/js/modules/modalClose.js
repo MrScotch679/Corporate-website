@@ -21,8 +21,10 @@ function modalClose(buttonSelector, modalSelector = '.modal') {
     });
   }
 
-  closeByButton();
-  closeByModal();
+  try {
+    closeByButton();
+    closeByModal();
+  } catch (error) {}
 }
 
 export default modalClose;

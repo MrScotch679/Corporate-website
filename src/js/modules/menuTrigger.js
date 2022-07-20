@@ -1,4 +1,4 @@
-function menuTrigger(menuSelector, buttonSelector, activeClass = '') {
+export default function menuTrigger(menuSelector, buttonSelector, activeClass = '') {
   const menu = document.querySelector(menuSelector),
         button = document.querySelector(buttonSelector);
 
@@ -6,5 +6,3 @@ function menuTrigger(menuSelector, buttonSelector, activeClass = '') {
     menu.classList.toggle(activeClass);
   });
 }
-
-export default menuTrigger;
