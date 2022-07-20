@@ -19,17 +19,19 @@
     margin-right: 0;
     padding: 0 10px;
     &_large {
-      width: 438px;
+      width: 340px;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
   &-preview {
     position: relative;
+    height: 340px;
     &__img {
       border-radius: 15px 15px 0px 0px;
-      width: 100%;
-      height: 100%;
+      object-fit: cover;
+      width: 363px;
+      height: 340px;
     } 
   }
   &-info {
@@ -69,7 +71,7 @@
 }
 
 .about-us {
-  background: url(../img/bg/bg-car.jpg) center (center / cover) no-repeat;
+  background: url(https://img3.goodfon.ru/original/1366x768/3/91/audi-rs7-parking-2429.jpg) center (center / cover) no-repeat;
   min-height: 735px;
   &__wrapper {
     padding: 121px 712px 135px 70px;
@@ -118,6 +120,7 @@
   &__preview {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 25px;
   }
 }

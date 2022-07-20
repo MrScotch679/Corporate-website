@@ -10,6 +10,10 @@ margin: 0;
 
 a {
 text-decoration: none;
+&:hover {
+  color: red;
+  text-shadow: rgb(0, 0, 0) 0px 0px 4px;;
+}
 }
 
 .container {
@@ -34,22 +38,31 @@ color: $main-color;
 }
 
 .subtitle {
-font-weight: 700;
-font-size: 40px;
-line-height: 60px;
-color: $main-color;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $main-color;
 }
 
 .headline {
-font-weight: 700;
-font-size: 28px;
-line-height: 30px;
-color: $main-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 30px;
+  color: $main-color;
 }
 
 .paragraph {
-font-weight: 400;
-font-size: 17px;
-line-height: 26px;
-color: $main-color;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: $main-color;
+}
+
+.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

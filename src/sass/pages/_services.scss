@@ -3,14 +3,17 @@
   background: #E2E9EC;
   padding: 50px 0 35px 0;
   &__items {
-    padding: 0 40px 0 40px;
+    padding: 0 20px 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
   &__item {
+    width: 666px;
+    height: 483px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 0 10px;
     .button {
       position: absolute;
       top: 321px;
@@ -26,8 +29,9 @@
     }
   }
   &__preview {
-    width: 666px;
-    height: 483px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
     border-radius: 20px;
   }
   .pagination {

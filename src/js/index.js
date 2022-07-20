@@ -17,21 +17,34 @@ window.addEventListener('DOMContentLoaded', function() {
   $('.carousel').slick({
     slidesToShow: 4,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     draggable: true,
     responsive: [{
-      breakpoint: 320,
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        draggable: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        draggable: true,
+      }
+    },
+    {
+      breakpoint: 426,
       settings: {
         slidesToShow: 1,
-        autoplay: false,
-        variableWidth: true,
+        draggable: true,
       }
     }]
   });
 
   $('.carousel .carousel-preview').slick({
-    draggable: false
+    draggable: false,
   });
 
   $('.journey .journey__items').slick({
@@ -39,8 +52,9 @@ window.addEventListener('DOMContentLoaded', function() {
     variableWidth: true,
     arrows: false,
     centerMode: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
+    draggable: false,
   });
 
   $('.full-catalog__items .carousel-preview').slick();

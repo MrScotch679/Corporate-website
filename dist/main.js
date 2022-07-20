@@ -34,15 +34,26 @@ window.addEventListener('DOMContentLoaded', function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel').slick({
     slidesToShow: 4,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     draggable: true,
     responsive: [{
-      breakpoint: 320,
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        draggable: true
+      }
+    }, {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        draggable: true
+      }
+    }, {
+      breakpoint: 426,
       settings: {
         slidesToShow: 1,
-        autoplay: false,
-        variableWidth: true
+        draggable: true
       }
     }]
   });
@@ -54,8 +65,9 @@ window.addEventListener('DOMContentLoaded', function () {
     variableWidth: true,
     arrows: false,
     centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 3000
+    autoplay: false,
+    autoplaySpeed: 3000,
+    draggable: false
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.full-catalog__items .carousel-preview').slick();
   (0,_modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__["default"])('.open');
