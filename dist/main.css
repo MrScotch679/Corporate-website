@@ -1705,40 +1705,46 @@ a:hover {
   }
   .menu__wrapper {
     display: none;
-    justify-content: center;
     position: fixed;
-    left: 0;
     top: 0;
-    height: 100%;
-    padding: 0;
+    min-height: 100vh;
+    width: 100%;
     background: black;
     border-radius: 0;
+    padding: 30px 30px;
   }
   .menu__wrapper:hover {
     cursor: none;
-    background: none;
+    background: black;
+  }
+  .menu__wrapper_active {
+    display: block;
   }
   .menu__list {
     display: flex;
     flex-direction: column;
-    padding: 0 30px 0 30px;
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
+    z-index: 10;
   }
   .menu__item {
+    width: 100%;
+    height: 100%;
     white-space: nowrap;
     font-weight: 700;
     font-size: 17px;
     line-height: 70px;
     color: #FFFFFF;
-    padding: 0 10px;
+    padding: 0;
   }
   .menu__close {
+    display: block;
     color: #FFFFFF;
     position: absolute;
     top: 5%;
-    right: 0;
+    right: 5%;
+    z-index: 10;
   }
   .header__wrapper {
     width: 100%;
@@ -1813,7 +1819,18 @@ a:hover {
   .full-catalog {
     min-height: 2029px;
     background: #E2E9EC;
-    padding: 50px 20px 100px 20px;
+    padding: 50px 20px 30px 20px;
+  }
+  .pagination .arrow-prev {
+    left: -90%;
+  }
+  .pagination .arrow-next {
+    right: -110%;
+  }
+  .pagination .pagination__item {
+    width: 40px;
+    height: 40px;
+    text-align: center;
   }
   .team {
     overflow: hidden;

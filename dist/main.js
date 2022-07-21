@@ -30,7 +30,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener('DOMContentLoaded', function () {
-  (0,_modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__["default"])('.menu__wrapper', '.menu__items', 'menu__wrapper_active');
+  (0,_modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__["default"])('.menu__wrapper', '.menu__items', 'menu__wrapper_active', '.menu__close');
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel').slick({
     slidesToShow: 4,
     infinite: true,
@@ -55,7 +55,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }]
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel .carousel-preview').slick({
-    draggable: false
+    draggable: false,
+    touchMove: false
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.journey .journey__items').slick({
     slidesToShow: 1,
@@ -64,12 +65,13 @@ window.addEventListener('DOMContentLoaded', function () {
     centerMode: true,
     autoplay: false,
     autoplaySpeed: 3000,
-    draggable: false
+    draggable: false,
+    touchMove: false
   });
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.full-catalog__items .carousel-preview').slick();
   (0,_modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__["default"])('.open');
   (0,_modules_modalClose_js__WEBPACK_IMPORTED_MODULE_7__["default"])('.close');
-  (0,_modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__["default"])('.tabs__wrapper', '.tabs__item', '.tabs__content');
+  (0,_modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__["default"])('.tabs__wrapper', '.tabs__item', '.tabs__content', 'tabs__item_active', 'tabs__content_active');
 });
 
 /***/ }),
@@ -84,10 +86,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ menuTrigger; }
 /* harmony export */ });
-function menuTrigger(menuSelector, buttonSelector) {
-  var activeClass = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+function menuTrigger(menuSelector, buttonSelector, activeClass, closeSelector) {
   var menu = document.querySelector(menuSelector),
-      button = document.querySelector(buttonSelector);
+      button = document.querySelector(buttonSelector),
+      close = document.querySelector(closeSelector);
+  close.addEventListener('click', function () {
+    menu.classList.toggle(activeClass);
+  });
   button.addEventListener('click', function () {
     menu.classList.toggle(activeClass);
   });
@@ -105,8 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 function modalClose(buttonSelector) {
   var modalSelector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '.modal';
   var buttons = document.querySelectorAll(buttonSelector),
-      modal = document.querySelector(modalSelector),
-      container = document.querySelector('.modal .container');
+      modal = document.querySelector(modalSelector);
 
   function closeByButton() {
     buttons.forEach(function (button) {
@@ -119,7 +123,7 @@ function modalClose(buttonSelector) {
 
   function closeByModal() {
     modal.addEventListener('click', function (e) {
-      if (e.target && (e.target === modal || e.target === container)) {
+      if (e.target && (e.target === modal || e.target.classList.contains('container'))) {
         modal.style.display = 'none';
         document.body.style.overflow = '';
       }
@@ -171,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ tabs; }
 /* harmony export */ });
-function tabs(headerSelector, tabsSelector, contentSelector) {
+function tabs(headerSelector, tabsSelector, contentSelector, tabActiveSelector, contentActiveSelector) {
   var header = document.querySelector(headerSelector),
       tabs = document.querySelectorAll(tabsSelector),
       content = document.querySelectorAll(contentSelector);
@@ -192,16 +196,16 @@ function tabs(headerSelector, tabsSelector, contentSelector) {
   } catch (error) {}
 
   function showContent(i) {
-    tabs[i].classList.toggle('tabs__item_active');
-    content[i].classList.toggle('tabs__content_active');
+    tabs[i].classList.toggle(tabActiveSelector);
+    content[i].classList.toggle(contentActiveSelector);
   }
 
   function hideContent() {
     tabs.forEach(function (tab) {
-      tab.classList.remove('tabs__item_active');
+      tab.classList.remove(tabActiveSelector);
     });
     content.forEach(function (item) {
-      item.classList.remove('tabs__content_active');
+      item.classList.remove(contentActiveSelector);
     });
   }
 }

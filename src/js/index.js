@@ -8,11 +8,11 @@ import '../css/fancybox.css';
 import menuTrigger from './modules/menuTrigger.js';
 import modalTrigger from './modules/modalTrigger.js';
 import modalClose from './modules/modalClose.js';
-import accordion from './modules/tabs.js';
+import tabs from './modules/tabs.js';
 
 
 window.addEventListener('DOMContentLoaded', function() {
-  menuTrigger('.menu__wrapper', '.menu__items', 'menu__wrapper_active');
+  menuTrigger('.menu__wrapper', '.menu__items', 'menu__wrapper_active', '.menu__close');
     
   $('.carousel').slick({
     slidesToShow: 4,
@@ -42,6 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   $('.carousel .carousel-preview').slick({
     draggable: false,
+    touchMove: false,
   });
 
   $('.journey .journey__items').slick({
@@ -52,11 +53,12 @@ window.addEventListener('DOMContentLoaded', function() {
     autoplay: false,
     autoplaySpeed: 3000,
     draggable: false,
+    touchMove: false,
   });
 
   $('.full-catalog__items .carousel-preview').slick();
 
   modalTrigger('.open');
   modalClose('.close');
-  accordion('.tabs__wrapper', '.tabs__item', '.tabs__content');
+  tabs('.tabs__wrapper', '.tabs__item', '.tabs__content', 'tabs__item_active', 'tabs__content_active');
 });

@@ -1,7 +1,6 @@
 function modalClose(buttonSelector, modalSelector = '.modal') {
   const buttons = document.querySelectorAll(buttonSelector),
-        modal = document.querySelector(modalSelector),
-        container = document.querySelector('.modal .container');
+        modal = document.querySelector(modalSelector);
 
   function closeByButton() {
     buttons.forEach(button => {
@@ -14,7 +13,7 @@ function modalClose(buttonSelector, modalSelector = '.modal') {
 
   function closeByModal() {
     modal.addEventListener('click', (e) => {
-      if (e.target && (e.target === modal || e.target === container)) {
+      if (e.target && (e.target === modal || e.target.classList.contains('container'))) {
         modal.style.display = 'none';
         document.body.style.overflow = '';
       }

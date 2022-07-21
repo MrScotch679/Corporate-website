@@ -1,4 +1,4 @@
-export default function tabs(headerSelector, tabsSelector, contentSelector) {
+export default function tabs(headerSelector, tabsSelector, contentSelector, tabActiveSelector, contentActiveSelector) {
   const header = document.querySelector(headerSelector),
         tabs = document.querySelectorAll(tabsSelector),
         content = document.querySelectorAll(contentSelector);
@@ -19,17 +19,17 @@ export default function tabs(headerSelector, tabsSelector, contentSelector) {
   } catch (error) {}
 
   function showContent(i) {
-    tabs[i].classList.toggle('tabs__item_active');
-    content[i].classList.toggle('tabs__content_active');
+    tabs[i].classList.toggle(tabActiveSelector);
+    content[i].classList.toggle(contentActiveSelector);
   }
 
   function hideContent() {
     tabs.forEach(tab => {
-      tab.classList.remove('tabs__item_active');
+      tab.classList.remove(tabActiveSelector);
     });
 
     content.forEach(item => {
-      item.classList.remove('tabs__content_active');
+      item.classList.remove(contentActiveSelector);
     });
   }
 }
