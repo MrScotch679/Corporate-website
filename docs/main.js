@@ -91,10 +91,19 @@ function menuTrigger(menuSelector, buttonSelector, activeClass, closeSelector) {
       button = document.querySelector(buttonSelector),
       close = document.querySelector(closeSelector);
   close.addEventListener('click', function () {
-    menu.classList.toggle(activeClass);
+    if (menu.classList.contains(activeClass)) {
+      menu.classList.remove(activeClass);
+      document.body.style.overflow = '';
+    } else {
+      menu.classList.add(activeClass);
+    }
   });
   button.addEventListener('click', function () {
     menu.classList.toggle(activeClass);
+
+    if (window.screen.availWidth <= 426) {
+      document.body.style.overflow = 'hidden';
+    }
   });
 }
 

@@ -181,7 +181,6 @@
     .paragraph {
       margin-top: 21px;
       text-align: center;
-      color: #011313;
       padding: 0 25px;
     }
   }
@@ -295,6 +294,23 @@
         height: 100%;
         object-fit: cover;
       }
+    }
+  }
+
+  .error-promo {
+    padding: 240px 25px 30px 25px;
+    .title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    .headline {
+      line-height: 30px;
+      text-align: center;
+    }
+    .button {
+      width: 162px;
+      margin: 0 auto;
+      margin-top: 37px;
     }
   }
 }
