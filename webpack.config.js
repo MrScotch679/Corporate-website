@@ -17,7 +17,7 @@ const optimization = () => {
 
   if (isProd) {
     config.minimizer = [
-      new CssMinimizerPlugin(),
+      // new CssMinimizerPlugin(),
       new TerserPlugin(),
     ];
   }
