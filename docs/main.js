@@ -2,24 +2,24 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/index.js":
-/*!*********************!*\
-  !*** ./js/index.js ***!
-  \*********************/
+/***/ "./src/js/index.js":
+/*!*************************!*\
+  !*** ./src/js/index.js ***!
+  \*************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "../node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "../node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ "../node_modules/@fancyapps/ui/dist/fancybox.esm.js");
-/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/style.scss */ "./sass/style.scss");
-/* harmony import */ var _css_fancybox_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/fancybox.css */ "./css/fancybox.css");
-/* harmony import */ var _modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/menuTrigger.js */ "./js/modules/menuTrigger.js");
-/* harmony import */ var _modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/modalTrigger.js */ "./js/modules/modalTrigger.js");
-/* harmony import */ var _modules_modalClose_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/modalClose.js */ "./js/modules/modalClose.js");
-/* harmony import */ var _modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/tabs.js */ "./js/modules/tabs.js");
+/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/fancybox.esm.js");
+/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/style.scss */ "./src/sass/style.scss");
+/* harmony import */ var _css_fancybox_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/fancybox.css */ "./src/css/fancybox.css");
+/* harmony import */ var _modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/menuTrigger.js */ "./src/js/modules/menuTrigger.js");
+/* harmony import */ var _modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/modalTrigger.js */ "./src/js/modules/modalTrigger.js");
+/* harmony import */ var _modules_modalClose_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/modalClose.js */ "./src/js/modules/modalClose.js");
+/* harmony import */ var _modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/tabs.js */ "./src/js/modules/tabs.js");
 
 
 
@@ -76,10 +76,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
 /***/ }),
 
-/***/ "./js/modules/menuTrigger.js":
-/*!***********************************!*\
-  !*** ./js/modules/menuTrigger.js ***!
-  \***********************************/
+/***/ "./src/js/modules/menuTrigger.js":
+/*!***************************************!*\
+  !*** ./src/js/modules/menuTrigger.js ***!
+  \***************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -109,10 +109,10 @@ function menuTrigger(menuSelector, buttonSelector, activeClass, closeSelector) {
 
 /***/ }),
 
-/***/ "./js/modules/modalClose.js":
-/*!**********************************!*\
-  !*** ./js/modules/modalClose.js ***!
-  \**********************************/
+/***/ "./src/js/modules/modalClose.js":
+/*!**************************************!*\
+  !*** ./src/js/modules/modalClose.js ***!
+  \**************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -149,10 +149,10 @@ function modalClose(buttonSelector) {
 
 /***/ }),
 
-/***/ "./js/modules/modalTrigger.js":
-/*!************************************!*\
-  !*** ./js/modules/modalTrigger.js ***!
-  \************************************/
+/***/ "./src/js/modules/modalTrigger.js":
+/*!****************************************!*\
+  !*** ./src/js/modules/modalTrigger.js ***!
+  \****************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -174,10 +174,10 @@ function modalTrigger(buttonSelector) {
 
 /***/ }),
 
-/***/ "./js/modules/tabs.js":
-/*!****************************!*\
-  !*** ./js/modules/tabs.js ***!
-  \****************************/
+/***/ "./src/js/modules/tabs.js":
+/*!********************************!*\
+  !*** ./src/js/modules/tabs.js ***!
+  \********************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -221,10 +221,10 @@ function tabs(headerSelector, tabsSelector, contentSelector, tabActiveSelector, 
 
 /***/ }),
 
-/***/ "./css/fancybox.css":
-/*!**************************!*\
-  !*** ./css/fancybox.css ***!
-  \**************************/
+/***/ "./src/css/fancybox.css":
+/*!******************************!*\
+  !*** ./src/css/fancybox.css ***!
+  \******************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -233,10 +233,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./sass/style.scss":
-/*!*************************!*\
-  !*** ./sass/style.scss ***!
-  \*************************/
+/***/ "./src/sass/style.scss":
+/*!*****************************!*\
+  !*** ./src/sass/style.scss ***!
+  \*****************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -399,7 +399,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkex_gumina"] = self["webpackChunkex_gumina"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();
@@ -409,8 +409,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fancyapps_ui_dist_fancybox_esm_-876435"], function() { return __webpack_require__("../node_modules/@babel/polyfill/lib/index.js"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fancyapps_ui_dist_fancybox_esm_-876435"], function() { return __webpack_require__("./js/index.js"); })
+/******/ 	__webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fancyapps_ui_dist_fancybox_esm_-876435"], function() { return __webpack_require__("./node_modules/@babel/polyfill/lib/index.js"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_babel_polyfill_lib_index_js-node_modules_fancyapps_ui_dist_fancybox_esm_-876435"], function() { return __webpack_require__("./src/js/index.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
