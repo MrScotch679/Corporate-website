@@ -43,10 +43,9 @@ const cssLoaders = (extra) => {
 };
 
 module.exports = {
-  context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: ['@babel/polyfill', './js/index.js'],
+    main: ['@babel/polyfill', './src/js/index.js'],
   },
   output: {
     filename: filename('js'),
@@ -61,56 +60,56 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './index.html',
+      template: './src/index.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'about-us.html',
-      template: './about-us.html',
+      template: './src/about-us.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'catalog.html',
-      template: './catalog.html',
+      template: './src/catalog.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'contacts.html',
-      template: './contacts.html',
+      template: './src/contacts.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'galery.html',
-      template: './galery.html',
+      template: './src/galery.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'notFound.html',
-      template: './notFound.html',
+      template: './src/notFound.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'questions.html',
-      template: './questions.html',
+      template: './src/questions.html',
       minify: {
         collapseWhitespace: isProd,
       }
     }),
     new HtmlWebpackPlugin({
       filename: 'services.html',
-      template: './services.html',
+      template: './src/services.html',
       minify: {
         collapseWhitespace: isProd,
       }
@@ -118,9 +117,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: "icons", to: "icons" },
-        { from: "fonts", to: "fonts" },
-        { from: "img", to: "img" },
+        { from: "./src/icons", to: "icons" },
+        { from: "./src/fonts", to: "fonts" },
+        { from: "./src/img", to: "img" },
 
       ],
     }),
