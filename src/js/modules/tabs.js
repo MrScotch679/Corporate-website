@@ -7,9 +7,9 @@ export default function tabs(headerSelector, tabsSelector, contentSelector, tabA
     header.addEventListener('click', (e) => {
       const target = e.target;
   
-      if (target && (target.classList.contains(tabsSelector.replace(/\./gi, '')) || target.parentNode.classList.contains(tabsSelector.replace(/\./gi, '')))) {
+      if (target && (target.classList.contains(tabsSelector.replace(/\./gi, '')))) {
         tabs.forEach((tab, i) => {
-          if (tab == target || tab.parentNode == target) {
+          if (tab == target) {
             hideContent();
             showContent(i);
           }

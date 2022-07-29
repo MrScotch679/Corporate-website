@@ -41,7 +41,7 @@
 .menu {
   position: relative;
   margin-right: 103px;
-  &__items {
+  &__button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@
       background: rgba($color: #ffff, $alpha: 0.4);
     }
   }
-  &__button {
+  &__text {
     font-weight: 800;
     font-size: 15px;
     line-height: 34px;
@@ -84,6 +84,7 @@
     &_active {
       display: flex;
       justify-content: center;
+      overflow-y: hidden;
     }
     &:hover {
       cursor: pointer;

@@ -877,7 +877,7 @@ a:hover {
   position: relative;
   margin-right: 103px;
 }
-.menu__items {
+.menu__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -886,11 +886,11 @@ a:hover {
   background: rgba(255, 255, 255, 0.23);
   border-radius: 100px;
 }
-.menu__items:hover {
+.menu__button:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.4);
 }
-.menu__button {
+.menu__text {
   font-weight: 800;
   font-size: 15px;
   line-height: 34px;
@@ -921,6 +921,7 @@ a:hover {
 .menu__wrapper_active {
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
 }
 .menu__wrapper:hover {
   cursor: pointer;
@@ -1558,6 +1559,9 @@ a:hover {
   justify-content: center;
   background-color: #E2E9EC;
   z-index: 10;
+}
+.modal body {
+  overflow: hidden;
 }
 .modal__window {
   margin-top: 40%;
