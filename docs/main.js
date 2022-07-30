@@ -90,6 +90,7 @@ function modalComponent(openTriggerSelector, closeTriggerSelector) {
   function modalTrigger() {
     openButton.addEventListener('click', function () {
       modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
     });
   }
 
@@ -263,9 +264,10 @@ function tabs(headerSelector, tabsSelector, contentSelector, tabActiveSelector, 
 
   try {
     header.addEventListener('click', function (e) {
-      var target = e.target;
+      var target = e.target,
+          isClassName = target.classList.contains(tabsSelector.replace(/\./gi, ''));
 
-      if (target && target.classList.contains(tabsSelector.replace(/\./gi, ''))) {
+      if (target && isClassName) {
         tabs.forEach(function (tab, i) {
           if (tab == target) {
             hideContent();

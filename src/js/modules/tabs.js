@@ -5,9 +5,10 @@ export default function tabs(headerSelector, tabsSelector, contentSelector, tabA
 
   try {
     header.addEventListener('click', (e) => {
-      const target = e.target;
+      const target = e.target,
+            isClassName = target.classList.contains(tabsSelector.replace(/\./gi, ''));
   
-      if (target && (target.classList.contains(tabsSelector.replace(/\./gi, '')))) {
+      if (target && isClassName) {
         tabs.forEach((tab, i) => {
           if (tab == target) {
             hideContent();

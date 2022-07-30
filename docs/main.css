@@ -1561,7 +1561,7 @@ a:hover {
   z-index: 10;
 }
 .modal body {
-  overflow: hidden;
+  overflow-y: hidden !important;
 }
 .modal__window {
   margin-top: 40%;

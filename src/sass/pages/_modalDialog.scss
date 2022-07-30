@@ -7,9 +7,9 @@
   justify-content: center;
   background-color: #E2E9EC;
   z-index: 10;
-  
+
   body {
-    overflow: hidden;
+    overflow-y: hidden !important; 
   }
 
   &__window {

@@ -6,6 +6,7 @@ function modalComponent(openTriggerSelector, closeTriggerSelector, modalSelector
   function modalTrigger() {
       openButton.addEventListener('click', () => {
         modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
       });
   }
 
