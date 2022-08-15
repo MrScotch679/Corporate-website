@@ -7,6 +7,11 @@
   justify-content: center;
   background-color: #E2E9EC;
   z-index: 10;
+
+  body {
+    overflow-y: hidden !important; 
+  }
+
   &__window {
     margin-top: 40%;
     width: 320px;

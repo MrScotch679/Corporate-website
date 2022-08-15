@@ -9,17 +9,17 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/fancybox.esm.js");
-/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/style.scss */ "./src/sass/style.scss");
-/* harmony import */ var _css_fancybox_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../css/fancybox.css */ "./src/css/fancybox.css");
-/* harmony import */ var _modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/menuTrigger.js */ "./src/js/modules/menuTrigger.js");
-/* harmony import */ var _modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/modalTrigger.js */ "./src/js/modules/modalTrigger.js");
-/* harmony import */ var _modules_modalClose_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/modalClose.js */ "./src/js/modules/modalClose.js");
-/* harmony import */ var _modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/tabs.js */ "./src/js/modules/tabs.js");
+/* harmony import */ var _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fancyapps/ui */ "./node_modules/@fancyapps/ui/dist/fancybox.esm.js");
+/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/style.scss */ "./src/sass/style.scss");
+/* harmony import */ var _css_fancybox_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../css/fancybox.css */ "./src/css/fancybox.css");
+/* harmony import */ var _modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/menuTrigger.js */ "./src/js/modules/menuTrigger.js");
+/* harmony import */ var _modules_tabs_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/tabs.js */ "./src/js/modules/tabs.js");
+/* harmony import */ var _modules_sliders_mainSlider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modules/sliders/mainSlider.js */ "./src/js/modules/sliders/mainSlider.js");
+/* harmony import */ var _modules_sliders_mainSliderCards_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/sliders/mainSliderCards.js */ "./src/js/modules/sliders/mainSliderCards.js");
+/* harmony import */ var _modules_sliders_catalogCardSlider_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/sliders/catalogCardSlider.js */ "./src/js/modules/sliders/catalogCardSlider.js");
+/* harmony import */ var _modules_sliders_journeySlider_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/sliders/journeySlider.js */ "./src/js/modules/sliders/journeySlider.js");
+/* harmony import */ var _modules_modalComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/modalComponent */ "./src/js/modules/modalComponent.js");
+
 
 
 
@@ -30,48 +30,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 window.addEventListener('DOMContentLoaded', function () {
-  (0,_modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_5__["default"])('.menu__wrapper', '.menu__items', 'menu__wrapper_active', '.menu__close');
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel').slick({
-    slidesToShow: 4,
-    infinite: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    draggable: true,
-    responsive: [{
-      breakpoint: 1025,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 769,
-      settings: {
-        slidesToShow: 2
-      }
-    }, {
-      breakpoint: 426,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel .carousel-preview').slick({
-    draggable: false,
-    touchMove: false
-  });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.journey .journey__items').slick({
-    slidesToShow: 1,
-    variableWidth: true,
-    arrows: false,
-    centerMode: true,
-    autoplay: false,
-    autoplaySpeed: 3000,
-    draggable: false,
-    touchMove: false
-  });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.full-catalog__items .carousel-preview').slick();
-  (0,_modules_modalTrigger_js__WEBPACK_IMPORTED_MODULE_6__["default"])('.open');
-  (0,_modules_modalClose_js__WEBPACK_IMPORTED_MODULE_7__["default"])('.close');
-  (0,_modules_tabs_js__WEBPACK_IMPORTED_MODULE_8__["default"])('.tabs__wrapper', '.tabs__item', '.tabs__content', 'tabs__item_active', 'tabs__content_active');
+  (0,_modules_menuTrigger_js__WEBPACK_IMPORTED_MODULE_3__["default"])('.menu__wrapper', '.menu__button', 'menu__wrapper_active', '.menu__close');
+  (0,_modules_modalComponent__WEBPACK_IMPORTED_MODULE_9__["default"])('.open', '.close');
+  (0,_modules_sliders_mainSlider_js__WEBPACK_IMPORTED_MODULE_5__["default"])('.carousel');
+  (0,_modules_sliders_mainSliderCards_js__WEBPACK_IMPORTED_MODULE_6__["default"])('.carousel .carousel-preview');
+  (0,_modules_sliders_journeySlider_js__WEBPACK_IMPORTED_MODULE_8__["default"])('.journey .journey__items');
+  (0,_modules_sliders_catalogCardSlider_js__WEBPACK_IMPORTED_MODULE_7__["default"])('.full-catalog__items .carousel-preview');
+  (0,_modules_tabs_js__WEBPACK_IMPORTED_MODULE_4__["default"])('.tabs__wrapper', '.tabs__item', '.tabs__content', 'tabs__item_active', 'tabs__content_active');
 });
 
 /***/ }),
@@ -109,21 +74,29 @@ function menuTrigger(menuSelector, buttonSelector, activeClass, closeSelector) {
 
 /***/ }),
 
-/***/ "./src/js/modules/modalClose.js":
-/*!**************************************!*\
-  !*** ./src/js/modules/modalClose.js ***!
-  \**************************************/
+/***/ "./src/js/modules/modalComponent.js":
+/*!******************************************!*\
+  !*** ./src/js/modules/modalComponent.js ***!
+  \******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-function modalClose(buttonSelector) {
-  var modalSelector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '.modal';
-  var buttons = document.querySelectorAll(buttonSelector),
+function modalComponent(openTriggerSelector, closeTriggerSelector) {
+  var modalSelector = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '.modal';
+  var openButton = document.querySelector(openTriggerSelector),
+      closeButtons = document.querySelectorAll(closeTriggerSelector),
       modal = document.querySelector(modalSelector);
 
+  function modalTrigger() {
+    openButton.addEventListener('click', function () {
+      modal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
   function closeByButton() {
-    buttons.forEach(function (button) {
-      button.addEventListener('click', function (e) {
+    closeButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
         modal.style.display = 'none';
         document.body.style.overflow = '';
       });
@@ -132,7 +105,9 @@ function modalClose(buttonSelector) {
 
   function closeByModal() {
     modal.addEventListener('click', function (e) {
-      if (e.target && (e.target === modal || e.target.classList.contains('container'))) {
+      var target = e.target;
+
+      if (target && (target === modal || target.classList.contains('container'))) {
         modal.style.display = 'none';
         document.body.style.overflow = '';
       }
@@ -140,36 +115,134 @@ function modalClose(buttonSelector) {
   }
 
   try {
+    modalTrigger();
     closeByButton();
     closeByModal();
   } catch (error) {}
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (modalClose);
+/* harmony default export */ __webpack_exports__["default"] = (modalComponent);
 
 /***/ }),
 
-/***/ "./src/js/modules/modalTrigger.js":
-/*!****************************************!*\
-  !*** ./src/js/modules/modalTrigger.js ***!
-  \****************************************/
+/***/ "./src/js/modules/sliders/catalogCardSlider.js":
+/*!*****************************************************!*\
+  !*** ./src/js/modules/sliders/catalogCardSlider.js ***!
+  \*****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ modalTrigger; }
+/* harmony export */   "default": function() { return /* binding */ catalogCardSlider; }
 /* harmony export */ });
-function modalTrigger(buttonSelector) {
-  var modalSelector = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '.modal';
-  var button = document.querySelector(buttonSelector),
-      modal = document.querySelector(modalSelector);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
 
-  try {
-    button.addEventListener('click', function () {
-      modal.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-    });
-  } catch (error) {}
+
+function catalogCardSlider(triggerSelector) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(triggerSelector).slick();
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/sliders/journeySlider.js":
+/*!*************************************************!*\
+  !*** ./src/js/modules/sliders/journeySlider.js ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ journeySlider; }
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function journeySlider(triggerSelector) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(triggerSelector).slick({
+    slidesToShow: 1,
+    variableWidth: false,
+    arrows: false,
+    centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    draggable: false,
+    touchMove: false
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/sliders/mainSlider.js":
+/*!**********************************************!*\
+  !*** ./src/js/modules/sliders/mainSlider.js ***!
+  \**********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ mainSlider; }
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function mainSlider(triggerSelector) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(triggerSelector).slick({
+    slidesToShow: 4,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    draggable: true,
+    responsive: [{
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2
+      }
+    }, {
+      breakpoint: 426,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
+  });
+}
+
+/***/ }),
+
+/***/ "./src/js/modules/sliders/mainSliderCards.js":
+/*!***************************************************!*\
+  !*** ./src/js/modules/sliders/mainSliderCards.js ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ mainSliderCards; }
+/* harmony export */ });
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function mainSliderCards(triggerSelector) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(triggerSelector).slick({
+    draggable: false,
+    touchMove: false
+  });
 }
 
 /***/ }),
@@ -191,11 +264,12 @@ function tabs(headerSelector, tabsSelector, contentSelector, tabActiveSelector, 
 
   try {
     header.addEventListener('click', function (e) {
-      var target = e.target;
+      var target = e.target,
+          isClassName = target.classList.contains(tabsSelector.replace(/\./gi, ''));
 
-      if (target && (target.classList.contains(tabsSelector.replace(/\./gi, '')) || target.parentNode.classList.contains(tabsSelector.replace(/\./gi, '')))) {
+      if (target && isClassName) {
         tabs.forEach(function (tab, i) {
-          if (tab == target || tab.parentNode == target) {
+          if (tab == target) {
             hideContent();
             showContent(i);
           }
