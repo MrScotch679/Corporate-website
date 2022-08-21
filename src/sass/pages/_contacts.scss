@@ -9,6 +9,7 @@
 }
 
 .contacts {
+  padding: 0 10px;
   .title {
     margin-bottom: 40px;
   }
@@ -19,6 +20,7 @@
 }
 
 .feedback {
+  padding: 0 10px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -26,7 +28,6 @@
     max-width: 670px;
     min-height: 295px;
     margin: 0 auto;
-    margin-top: 48px;
     :nth-child(2) {
       margin: 12px 0 12px 0;
     }
