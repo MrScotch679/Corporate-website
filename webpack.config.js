@@ -49,7 +49,7 @@ module.exports = {
   },
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'gh-pages')
+    path: path.resolve(__dirname, 'docs')
   },
   optimization: optimization(),
   devServer: {
