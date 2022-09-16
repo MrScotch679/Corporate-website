@@ -19,6 +19,6 @@ $ npm install
 ___
 ## **Run project**
 ```
-npm run watch
+$ npm run watch
 ```
 
